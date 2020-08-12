@@ -1,0 +1,110 @@
+[buildPlans.iosevka-comfy]                # <iosevka-comfy> is your plan name
+family = "Iosevka Comfy"                  # Font menu family name
+upright = ["v-a-singlestorey-tailed", "v-ampersand-upper-open", "v-b-toothed", "v-brace-straight", "v-capital-b-more-asymmetric", "v-capital-d-more-rounded", "v-capital-g-toothless", "v-capital-q-crossing", "v-d-tailed", "v-f-straight", "v-four-semi-open", "v-g-doublestorey", "v-i-italic", "v-j-straight", "v-k-curly", "v-l-italic", "v-m-shortleg-tailed", "v-n-tailed", "v-nine-straight-bar", "v-one-base", "v-p-eared", "v-percent-dots", "v-q-straight", "v-r-top-serifed", "v-seven-serifed", "v-six-straight-bar", "v-three-flattop", "v-u-tailed", "v-v-straight", "v-w-straight", "v-x-straight", "v-y-straight-turn", "v-zero-dotted"]
+italic = ["v-a-doublestorey-tailed", "v-ampersand-et-toothed", "v-at-short", "v-b-toothed", "v-brace-curly", "v-capital-q-straight", "v-d-toothed", "v-dollar-open", "v-f-straight-tailed", "v-four-open", "v-g-opendoublestorey", "v-i-italic", "v-j-flat-hook-serifed", "v-k-curly-cursive", "v-l-italic", "v-m-shortleg", "v-n-straight", "v-nine-closed-contour", "v-one-nobase", "v-p-earless-corner", "v-percent-dots", "v-q-earless-corner", "v-r-straight", "v-seven-noserif", "v-six-closed-contour", "v-t-flat-hook", "v-three-twoarcs", "v-u-with-bar", "v-v-curly", "v-w-curly", "v-x-curly", "v-y-curly", "v-zero-dotted"]
+# hintParams = ["-a", "sss"]              # Optional custom parameters for ttfautohint
+
+###################################################################################################
+# Override default building weights
+# When buildPlans.<plan name>.weights is absent, all weights would built and mapped to
+# default values.
+# IMPORTANT : Currently "menu" and "css" property only support numbers between 0 and 1000.
+#             and "shape" properly only supports number between 100 and 900 (inclusive).
+#             If you decide to use custom weights you have to define all the weights you
+#             plan to use otherwise they will not be built.
+[buildPlans.iosevka-comfy.weights.regular]
+shape = 400  # Weight for glyph shapes.
+menu  = 400  # Weight for the font's names.
+css   = 400  # Weight for webfont CSS.
+
+[buildPlans.iosevka-comfy.weights.semibold]
+shape = 600
+menu  = 600
+css   = 600
+
+[buildPlans.iosevka-comfy.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+
+# End weight section
+###################################################################################################
+
+###################################################################################################
+# Override default building slope sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
+# When this section is absent, all slopes would be built.
+
+[buildPlans.iosevka-comfy.slopes]
+upright = "normal"
+italic = "italic"
+
+# End slope section
+###################################################################################################
+
+###################################################################################################
+# Override default building widths
+# When buildPlans.<plan name>.widths is absent, all widths would built and mapped to
+# default values.
+# IMPORTANT : Currently "shape" property only supports numbers between 434 and 664 (inclusive),
+#             while "menu" only supports integers between 1 and 9 (inclusive).
+#             The "shape" parameter specifies the unit width, measured in 1/1000 em. The glyphs'
+#             width are equal to, or a simple multiple of the unit width.
+#             If you decide to use custom widths you have to define all the widths you plan to use,
+#             otherwise they will not be built.
+
+[buildPlans.iosevka-comfy.widths.normal]
+shape = 500        # Unit Width, measured in 1/1000 em.
+menu  = 5          # Width grade for the font's names.
+css   = "normal"   # "font-stretch' property of webfont CSS.
+
+[buildPlans.iosevka-comfy.widths.extended]
+shape = 576
+menu  = 7
+css   = "expanded"
+
+# End width section
+###################################################################################################
+
+###################################################################################################
+# Character Exclusion
+# Specify character ranges in the section below to exclude certain characters from the font being
+# built. Remove this section when this feature is not needed.
+
+[buildPlans.iosevka-comfy.exclude-chars]
+ranges = [[10003, 10008]]
+
+# End character exclusion
+###################################################################################################
+
+###################################################################################################
+# Compatibility Ligatures
+# Certain applications like Emacs does not support proper programming liagtures provided by
+# OpenType, but can support ligatures provided by PUA codepoints. Therefore you can edit the
+# following section to build PUA characters that are generated from the OpenType ligatures.
+# Remove this section when compatibility ligatures are not needed.
+
+[[buildPlans.iosevka-comfy.compatibility-ligatures]]
+unicode = 57600 # 0xE100
+featureTag = 'calt'
+sequence = '<*>'
+
+# End compatibility ligatures section
+###################################################################################################
+
+###################################################################################################
+# Metric overrides
+# Certain metrics like line height (leading) could be overridden in your build plan file.
+# Edit the values to change the metrics. Remove this section when overriding is not needed.
+
+[buildPlans.iosevka-comfy.metric-override]
+leading = 1250
+winMetricAscenderPad = 0
+winMetricDescenderPad = 0
+powerlineScaleY = 1
+powerlineScaleX = 1
+powerlineShiftY = 0
+powerlineShiftX = 0
+
+# End metric override section
+###################################################################################################
