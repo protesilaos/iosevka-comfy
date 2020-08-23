@@ -7,16 +7,19 @@ https://github.com/be5invis/Iosevka
 
 The files are provided as-is in the hope that they may prove useful.
 
+**Updates will be made whenever upstream introduces new character
+variants that could prove useful to this project.**
+
 Screen shots
 ------------
 
 My Emacs session, running the Modus themes:
 https://gitlab.com/protesilaos/modus-themes
 
-![scrot-char-sample-small](./screenshots/scrot-char-sample-small.png)
+![iosevka-comfy-sample-light](./screenshots/iosevka-comfy-sample-light.png)
 
-![scrot-char-sample-large](./screenshots/scrot-char-sample-large.png)
+![iosevka-comfy-sample-dark](./screenshots/iosevka-comfy-sample-dark.png)
 
-![scrot-code-sample-light](./screenshots/scrot-code-sample-light.png)
+![iosevka-comfy-sample-code-light](./screenshots/iosevka-comfy-sample-code-light.png)
 
-![scrot-code-sample-dark](./screenshots/scrot-code-sample-dark.png)
+![iosevka-comfy-sample-code-dark](./screenshots/iosevka-comfy-sample-code-dark.png)
