@@ -19,7 +19,3 @@ https://gitlab.com/protesilaos/modus-themes
 ![iosevka-comfy-sample-light](./screenshots/iosevka-comfy-sample-light.png)
 
 ![iosevka-comfy-sample-dark](./screenshots/iosevka-comfy-sample-dark.png)
-
-![iosevka-comfy-sample-code-light](./screenshots/iosevka-comfy-sample-code-light.png)
-
-![iosevka-comfy-sample-code-dark](./screenshots/iosevka-comfy-sample-code-dark.png)
