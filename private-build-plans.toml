@@ -1,9 +1,125 @@
-[buildPlans.iosevka-comfy]                # <iosevka-comfy> is your plan name
-family = "Iosevka Comfy"                  # Font menu family name
-upright = ["v-a-doublestorey-tailed", "v-ampersand-upper-open", "v-asterisk-low", "v-b-toothed", "v-brace-curly", "v-capital-b-more-asymmetric", "v-capital-d-more-rounded", "v-capital-g-toothless", "v-capital-q-crossing", "v-d-tailed", "v-dollar-open", "v-f-flat-hook", "v-four-semi-open", "v-g-doublestorey", "v-i-italic", "v-j-serifed", "v-k-straight", "v-l-italic", "v-m-earless-rounded-double-arch-shortleg", "v-n-earless-corner-straight", "v-nine-straight-bar", "v-one-base", "v-p-eared", "v-percent-dots", "v-q-straight", "v-r-top-serifed", "v-seven-serifed", "v-six-straight-bar", "v-t-flat-hook", "v-three-twoarcs", "v-u-tailed", "v-v-straight", "v-w-straight", "v-x-straight", "v-y-straight-turn", "v-zero-slashed"]
-italic = ["v-a-doublestorey", "v-ampersand-et-toothed", "v-asterisk-low", "v-at-short", "v-b-toothed", "v-brace-straight", "v-capital-r-curly", "v-capital-q-taily", "v-d-toothed", "v-dollar-open", "v-f-straight-tailed", "v-four-closed-non-crossing", "v-g-opendoublestorey", "v-i-italic", "v-j-flat-hook-serifed", "v-k-curly", "v-l-italic", "v-m-shortleg", "v-n-straight", "v-nine-closed-contour", "v-one-nobase", "v-p-earless-corner", "v-percent-dots", "v-q-earless-corner", "v-r-straight", "v-seven-noserif", "v-six-closed-contour", "v-t-standard", "v-three-twoarcs", "v-u-with-bar", "v-v-curly", "v-w-curly", "v-x-curly", "v-y-straight", "v-zero-slashed"]
+[buildPlans.iosevka-comfy]       # <iosevka-comfy> is your plan name
+family = "Iosevka Comfy"         # Font menu family name
+spacing = "normal"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
+serifs = "sans"                  # Optional; Values: `sans` or `slab`
 
-# hintParams = ["-a", "sss"]              # Optional custom parameters for ttfautohint
+###################################################################################################
+# Configure variants
+
+# # Optional; Whether to inherit a `ss##` variant
+# [buildPlans.iosevka-comfy.variants]
+# inherits = "ss01"
+
+# Optional; Configure single character's variant
+[buildPlans.iosevka-comfy.variants.design]
+cv01 = 1    # a cap straight
+cv02 = 1    # b cap straight
+cv03 = 2    # d cap curly
+cv04 = 1    # g cap toothed
+cv05 = 3    # i cap short serifs
+cv06 = 2    # j cap serified
+cv07 = 1    # k cap straight
+cv08 = 1    # m cap short middle leg
+cv09 = 2    # q cap straight
+cv10 = 1    # r cap straight
+cv11 = 1    # y cap straight
+cv13 = 1    # b toothed
+cv14 = 1    # d toothed
+cv17 = 1    # h straight
+cv26 = 1    # r straight
+cv36 = 2    # 0 dotted
+cv38 = 2    # 3 arched
+cv41 = 1    # 7 straight
+cv43 = 2    # tilde low
+cv44 = 2    # asterisk low
+cv45 = 1    # underscore right below baseline
+cv47 = 1    # uptick high
+cv48 = 1    # parentheses normal slope
+cv49 = 1    # braces straight (simplified)
+cv50 = 1    # column straight
+cv53 = 1    # dollar open
+cv54 = 1    # percent dots
+cv55 = 1    # bar natural slope
+cv56 = 2    # equal-or-{higher,lower} slanted
+cv57 = 1    # single quote straight
+cv58 = 1    # grave/backtick straight
+
+# Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
+[buildPlans.iosevka-comfy.variants.upright]
+cv12 = 1    # a double storey
+cv15 = 13   # f serifless bottom flat top crossbar at x height
+cv16 = 7    # g single storey flat hook earless
+cv18 = 10   # i serified flat tailed
+cv19 = 4    # j flat hook serified
+cv20 = 1    # k straight
+cv21 = 10   # l serified flat tailed
+cv22 = 10   # m earless shortleg double arch
+cv23 = 3    # n earless straight
+cv24 = 2    # p earless
+cv25 = 3    # q earless
+cv27 = 3    # t flat hook
+cv28 = 1    # u straight
+cv29 = 1    # v straight
+cv30 = 1    # w straight
+cv31 = 1    # x straight
+cv32 = 2    # y straight flat hook
+cv33 = 1    # z straight
+cv34 = 2    # eszet greek-beta-like
+cv35 = 1    # λ straight
+cv37 = 2    # 1 serified with base
+cv39 = 3    # 4 semi-open contour
+cv40 = 3    # 6 straight
+cv42 = 3    # 9 straight
+cv51 = 2    # ampersand open top
+cv52 = 1    # at threefold
+cv59 = 1    # e straight
+cv61 = 1    # 2 straight
+
+# Optional; Configure single character's variant for Italic only; Overrides [design]
+[buildPlans.iosevka-comfy.variants.italic]
+cv12 = 8    # a single storey earless tailed
+cv15 = 11   # f extended flat top bottom hook
+cv16 = 6    # g single storey flat hook
+cv18 = 8    # i serified tailed
+cv19 = 1    # j serified
+cv20 = 2    # k curly
+cv21 = 8    # l serified tailed
+cv22 = 2    # m straight shortleg
+cv23 = 1    # n straight
+cv24 = 1    # p straight
+cv25 = 1    # q straight
+cv27 = 1    # t serified
+cv28 = 4    # u tailed
+cv29 = 2    # v curly
+cv30 = 2    # w curly
+cv31 = 2    # x curly
+cv32 = 5    # y flat terminal hook
+cv33 = 4    # z curly
+cv34 = 3    # eszet Ss ligature
+cv35 = 2    # λ curly
+cv37 = 1    # 1 serified no base
+cv39 = 1    # 4 closed contour crossing
+cv40 = 1    # 6 closed contour
+cv42 = 1    # 9 closed contour
+cv51 = 4    # ampersand open top toothed
+cv52 = 3    # at short
+cv59 = 1    # e curly
+cv61 = 2    # 2 curly
+
+# End variant section
+###################################################################################################
+
+###################################################################################################
+# Configure ligations
+
+[buildPlans.iosevka-comfy.ligations]
+inherits = "default-calt"   # Optional; inherits an existing ligation set
+disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
+enables  = []               # Optional; enable specific ligation groups, overrides inherited ligation set
+
+# End ligation section
+###################################################################################################
+
 
 ###################################################################################################
 # Override default building weights
@@ -14,9 +130,9 @@ italic = ["v-a-doublestorey", "v-ampersand-et-toothed", "v-asterisk-low", "v-at-
 #             If you decide to use custom weights you have to define all the weights you
 #             plan to use otherwise they will not be built.
 [buildPlans.iosevka-comfy.weights.regular]
-shape = 400  # Weight for glyph shapes.
-menu  = 400  # Weight for the font's names.
-css   = 400  # Weight for webfont CSS.
+shape = 400
+menu  = 400
+css   = 400
 
 [buildPlans.iosevka-comfy.weights.semibold]
 shape = 600
@@ -99,7 +215,11 @@ sequence = '<*>'
 # Edit the values to change the metrics. Remove this section when overriding is not needed.
 
 [buildPlans.iosevka-comfy.metric-override]
-leading = 1250
+leading = 1250                 # default: 1250
+parensize= 966                 # default: 966
+xheight = 530                  # default: 530
+symbolMid= 340                 # default: 340
+cap = 735                      # default: 735
 winMetricAscenderPad = 0
 winMetricDescenderPad = 0
 powerlineScaleY = 1
