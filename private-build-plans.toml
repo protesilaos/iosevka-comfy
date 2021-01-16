@@ -27,6 +27,7 @@ cv13 = 1    # b toothed
 cv14 = 1    # d toothed
 cv17 = 1    # h straight
 cv26 = 1    # r straight
+cv32 = 5    # y cursive flat terminal hook
 cv36 = 1    # 0 slashed
 cv38 = 2    # 3 arched
 cv41 = 1    # 7 straight
@@ -63,7 +64,6 @@ cv28 = 1    # u straight
 cv29 = 1    # v straight
 cv30 = 1    # w straight
 cv31 = 1    # x straight
-cv32 = 2    # y straight flat hook
 cv33 = 1    # z straight
 cv34 = 2    # eszet greek-beta-like
 cv35 = 1    # λ straight
@@ -85,7 +85,7 @@ cv18 = 8    # i serified tailed
 cv19 = 1    # j serified
 cv20 = 2    # k curly
 cv21 = 8    # l serified tailed
-cv22 = 1    # m straight
+cv22 = 2    # m shortleg straight
 cv23 = 1    # n straight
 cv24 = 1    # p straight
 cv25 = 1    # q straight
@@ -94,7 +94,6 @@ cv28 = 4    # u tailed
 cv29 = 2    # v curly
 cv30 = 2    # w curly
 cv31 = 2    # x curly
-cv32 = 5    # y flat terminal hook
 cv33 = 4    # z curly
 cv34 = 3    # eszet Ss ligature
 cv35 = 2    # λ curly
@@ -181,10 +180,10 @@ shape = 500        # Unit Width, measured in 1/1000 em.
 menu  = 5          # Width grade for the font's names.
 css   = "normal"   # "font-stretch' property of webfont CSS.
 
-[buildPlans.iosevka-comfy.widths.extended]
-shape = 576
-menu  = 7
-css   = "expanded"
+# [buildPlans.iosevka-comfy.widths.extended]
+# shape = 576
+# menu  = 7
+# css   = "expanded"
 
 # End width section
 ###################################################################################################
@@ -220,18 +219,18 @@ sequence = '<*>'
 # Certain metrics like line height (leading) could be overridden in your build plan file.
 # Edit the values to change the metrics. Remove this section when overriding is not needed.
 
-[buildPlans.iosevka-comfy.metric-override]
-leading = 1250                 # default: 1250
-parensize= 966                 # default: 966
-xheight = 530                  # default: 530
-symbolMid= 340                 # default: 340
-cap = 735                      # default: 735
-winMetricAscenderPad = 0
-winMetricDescenderPad = 0
-powerlineScaleY = 1
-powerlineScaleX = 1
-powerlineShiftY = 0
-powerlineShiftX = 0
+# [buildPlans.iosevka-comfy.metric-override]
+# leading = 1250                 # default: 1250
+# parensize= 966                 # default: 966
+# xheight = 530                  # default: 530
+# symbolMid= 340                 # default: 340
+# cap = 735                      # default: 735
+# winMetricAscenderPad = 0
+# winMetricDescenderPad = 0
+# powerlineScaleY = 1
+# powerlineScaleX = 1
+# powerlineShiftY = 0
+# powerlineShiftX = 0
 
 # End metric override section
 ###################################################################################################
