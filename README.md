@@ -6,7 +6,7 @@ with the documentation of the upstream project: <https://github.com/be5invis/Ios
 
 Note that my `light` weight is set at 350 instead of 300.
 
-Last update on 2021-03-02 using Iosevka version `5.0.4`.
+Last update on 2021-04-04 using Iosevka version `5.2.0`.
 
 The files are provided as-is in the hope that they may prove useful.
 
