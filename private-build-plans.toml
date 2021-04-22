@@ -1,6 +1,6 @@
 [buildPlans.iosevka-comfy]       # <iosevka-comfy> is your plan name
 family = "Iosevka Comfy"         # Font menu family name
-spacing = "normal"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
+spacing = "fixed"                # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
 serifs = "sans"                  # Optional; Values: `sans` or `slab`
 
 ###################################################################################################
@@ -48,31 +48,31 @@ cv42 = 9    # r compact
 cv43 = 1    # s serifless
 cv44 = 3    # t flat hook
 cv49 = 6    # y cursive flat terminal hook
-cv50 = 1    # z straight
-cv52 = 1    # Λ lambda cap straight
-cv53 = 2    # α alpha straight tailed
-cv54 = 1    # γ gamma cap straight
-cv55 = 1    # ε epsilon serifless
-cv57 = 6    # ι iota serified flat tailed
-cv58 = 2    # λ lambda top tailed
-cv64 = 2    # 3 arched
-cv68 = 1    # 7 straight
-cv69 = 3    # 8 two asymmetric circles
-cv71 = 2    # ~ tilde low
-cv72 = 2    # * asterisk low
-cv73 = 1    # _ underscore right below baseline
-cv75 = 1    # ^ uptick high
-cv76 = 1    # ( parentheses normal slope
-cv77 = 1    # { braces straight (simplified)
-cv78 = 1    # # column straight
-cv81 = 1    # $ dollar open
-cv82 = 1    # ¢ cent open
-cv83 = 1    # % percent dots
-cv84 = 1    # | bar natural slope
-cv85 = 2    # ≥ equal-or-{higher,lower} slanted
-cv86 = 1    # ' single quote straight
-cv87 = 1    # ` grave/backtick straight
-cv88 = 1    # ? smooth
+cv53 = 1    # Λ lambda cap straight
+cv54 = 2    # α alpha straight tailed
+cv55 = 1    # γ gamma cap straight
+cv56 = 1    # ε epsilon serifless
+cv58 = 6    # ι iota serified flat tailed
+cv59 = 2    # λ lambda top tailed
+cv65 = 2    # 3 arched
+cv67 = 2    # 5 open contour
+cv69 = 1    # 7 straight
+cv70 = 3    # 8 two asymmetric circles
+cv72 = 2    # ~ tilde low
+cv73 = 2    # * asterisk five-pointed low
+cv74 = 1    # _ underscore right below baseline
+cv76 = 1    # ^ uptick high
+cv77 = 1    # ( parentheses normal slope
+cv78 = 1    # { braces straight (simplified)
+cv79 = 1    # # column straight
+cv82 = 1    # $ dollar open
+cv83 = 1    # ¢ cent open
+cv84 = 1    # % percent dots
+cv85 = 1    # | bar natural slope
+cv86 = 2    # ≥ equal-or-{higher,lower} slanted
+cv87 = 1    # ' single quote straight
+cv88 = 1    # ` grave/backtick straight
+cv89 = 1    # ? smooth
 
 # Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
 [buildPlans.iosevka-comfy.variants.upright]
@@ -81,7 +81,7 @@ cv30 = 1    # e straight
 cv31 = 16   # f serifless bottom flat top crossbar at x height
 cv32 = 8    # g single storey flat hook earless
 cv36 = 1    # k straight
-cv38 = 10   # m earless double arch shortleg
+cv38 = 9    # m earless double arch
 cv39 = 3    # n earless straight
 cv40 = 2    # p earless
 cv41 = 3    # q earless
@@ -90,14 +90,14 @@ cv46 = 1    # v straight
 cv47 = 1    # w straight short middle top
 cv48 = 1    # x straight
 cv50 = 1    # z straight
-cv61 = 9    # 0 oval dotted
-cv62 = 2    # 1 serified with base
-cv63 = 1    # 2 straight
-cv65 = 3    # 4 semi-open contour
-cv67 = 3    # 6 straight
-cv70 = 3    # 9 straight
-cv79 = 2    # & et open top (ampersand)
-cv80 = 1    # @ at threefold
+cv62 = 9    # 0 oval dotted
+cv63 = 2    # 1 serified with base
+cv64 = 1    # 2 straight
+cv66 = 3    # 4 semi-open contour
+cv68 = 3    # 6 straight
+cv71 = 3    # 9 straight
+cv80 = 2    # & et open top (ampersand)
+cv81 = 1    # @ at threefold
 
 # Optional; Configure single character's variant for Italic only; Overrides [design]
 [buildPlans.iosevka-comfy.variants.italic]
@@ -115,29 +115,17 @@ cv46 = 2    # v curly
 cv47 = 2    # w curly short middle top
 cv48 = 2    # x curly
 cv50 = 4    # z curly
-cv61 = 4    # 0 dotted
-cv62 = 1    # 1 serified no base
-cv63 = 2    # 2 curly
-cv65 = 1    # 4 closed contour crossing
-cv67 = 1    # 6 closed contour
-cv70 = 1    # 9 closed contour
-cv79 = 4    # & et open top toothed (ampersand)
-cv80 = 3    # @ at short
+cv62 = 4    # 0 dotted
+cv63 = 1    # 1 serified no base
+cv64 = 2    # 2 curly
+cv66 = 1    # 4 closed contour crossing
+cv68 = 1    # 6 closed contour
+cv71 = 1    # 9 closed contour
+cv80 = 4    # & et open top toothed (ampersand)
+cv81 = 3    # @ at short
 
 # End variant section
 ###################################################################################################
-
-###################################################################################################
-# Configure ligations
-
-[buildPlans.iosevka-comfy.ligations]
-inherits = "default-calt"   # Optional; inherits an existing ligation set
-disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
-enables  = []               # Optional; enable specific ligation groups, overrides inherited ligation set
-
-# End ligation section
-###################################################################################################
-
 
 ###################################################################################################
 # Override default building weights
@@ -147,20 +135,10 @@ enables  = []               # Optional; enable specific ligation groups, overrid
 #             and "shape" properly only supports number between 100 and 900 (inclusive).
 #             If you decide to use custom weights you have to define all the weights you
 #             plan to use otherwise they will not be built.
-[buildPlans.iosevka-comfy.weights.light]
-shape = 350
-menu  = 350
-css   = 350
-
 [buildPlans.iosevka-comfy.weights.regular]
 shape = 400
 menu  = 400
 css   = 400
-
-[buildPlans.iosevka-comfy.weights.semibold]
-shape = 600
-menu  = 600
-css   = 600
 
 [buildPlans.iosevka-comfy.weights.bold]
 shape = 700
@@ -194,12 +172,17 @@ italic = "italic"
 #             otherwise they will not be built.
 
 [buildPlans.iosevka-comfy.widths.normal]
-shape = 500        # Unit Width, measured in 1/1000 em.
+shape = 550        # Unit Width, measured in 1/1000 em.
 menu  = 5          # Width grade for the font's names.
 css   = "normal"   # "font-stretch' property of webfont CSS.
 
+# [buildPlans.iosevka-comfy.widths.normal]
+# shape = 500        # Unit Width, measured in 1/1000 em.
+# menu  = 5          # Width grade for the font's names.
+# css   = "normal"   # "font-stretch' property of webfont CSS.
+
 # [buildPlans.iosevka-comfy.widths.extended]
-# shape = 576
+# shape = 600
 # menu  = 7
 # css   = "expanded"
 
@@ -207,48 +190,18 @@ css   = "normal"   # "font-stretch' property of webfont CSS.
 ###################################################################################################
 
 ###################################################################################################
-# Character Exclusion
-# Specify character ranges in the section below to exclude certain characters from the font being
-# built. Remove this section when this feature is not needed.
-
-[buildPlans.iosevka-comfy.exclude-chars]
-ranges = [[10003, 10008]]
-
-# End character exclusion
-###################################################################################################
-
-###################################################################################################
-# Compatibility Ligatures
-# Certain applications like Emacs does not support proper programming liagtures provided by
-# OpenType, but can support ligatures provided by PUA codepoints. Therefore you can edit the
-# following section to build PUA characters that are generated from the OpenType ligatures.
-# Remove this section when compatibility ligatures are not needed.
-
-[[buildPlans.iosevka-comfy.compatibility-ligatures]]
-unicode = 57600 # 0xE100
-featureTag = 'calt'
-sequence = '<*>'
-
-# End compatibility ligatures section
-###################################################################################################
-
-###################################################################################################
 # Metric overrides
 # Certain metrics like line height (leading) could be overridden in your build plan file.
 # Edit the values to change the metrics. Remove this section when overriding is not needed.
 
-# [buildPlans.iosevka-comfy.metric-override]
-# leading = 1250                 # default: 1250
-# parensize= 966                 # default: 966
-# xheight = 530                  # default: 530
-# symbolMid= 340                 # default: 340
-# cap = 735                      # default: 735
-# winMetricAscenderPad = 0
-# winMetricDescenderPad = 0
-# powerlineScaleY = 1
-# powerlineScaleX = 1
-# powerlineShiftY = 0
-# powerlineShiftX = 0
+[buildPlans.iosevka-comfy.metric-override]
+leading = 1100
+
+[buildPlans.iosevka-comfy.metric-override.multiplies]
+sb = 1.0625
+
+[buildPlans.iosevka-comfy.metric-override.adds]
+sb = 15
 
 # End metric override section
 ###################################################################################################
