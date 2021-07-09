@@ -4,8 +4,8 @@ Private build of the Iosevka monospaced font, with adjusted metrics and
 lots of overrides for individual glyphs at both roman and ital variants.
 
 Configured in accordance with the documentation of the upstream project:
-<https://github.com/be5invis/Iosevka>.  Last update on 2021-07-05 using
-Iosevka version `v7.2.5` commit `8977ac09`.
+<https://github.com/be5invis/Iosevka>.  Last update on 2021-07-09 using
+Iosevka version `v7.2.6` commit `5b0b5425`.
 
 The files are provided as-is in the hope that they may prove useful, but
 are otherwise intended only for my private use.
