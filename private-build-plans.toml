@@ -20,7 +20,7 @@ cv05 = 1    # E cap serifless
 cv06 = 1    # F cap serifless
 cv07 = 4    # G cap toothed
 cv08 = 1    # H cap serifless
-cv09 = 3    # I cap short serifs
+cv09 = 1    # I cap long serifs
 cv10 = 2    # J cap serified
 cv11 = 2    # K cap curly
 cv12 = 1    # L cap serifless
@@ -62,10 +62,10 @@ cv82 = 2    # * asterisk five-pointed low
 cv83 = 1    # _ underscore right below baseline
 cv85 = 1    # ^ uptick high
 cv86 = 1    # ( parentheses normal slope
-cv87 = 1    # { braces straight (simplified)
+cv87 = 2    # { braces curly
 cv88 = 1    # # column straight
-cv91 = 1    # $ dollar open
-cv92 = 1    # ¢ cent open
+cv91 = 2    # $ dollar strike through
+cv92 = 2    # ¢ cent strike through
 cv93 = 1    # % percent dots
 cv94 = 1    # | bar natural slope
 cv95 = 2    # ≥ equal-or-{higher,lower} slanted
@@ -84,13 +84,13 @@ cv36 = 1    # k straight
 cv38 = 9    # m earless double arch
 cv39 = 3    # n earless straight
 cv40 = 2    # p earless
-cv41 = 3    # q earless
+cv41 = 2    # q earless
 cv45 = 1    # u straight
 cv46 = 1    # v straight
 cv47 = 1    # w straight
 cv48 = 1    # x straight
 cv50 = 1    # z straight
-cv71 = 9    # 0 oval dotted
+cv71 = 7    # 0 oval slashed
 cv72 = 2    # 1 serified with base
 cv73 = 1    # 2 straight
 cv75 = 3    # 4 semi-open contour
@@ -115,7 +115,7 @@ cv46 = 2    # v curly
 cv47 = 2    # w curly short middle top
 cv48 = 2    # x curly
 cv50 = 4    # z curly
-cv71 = 4    # 0 dotted
+cv71 = 2    # 0 slashed
 cv72 = 1    # 1 serified no base
 cv73 = 2    # 2 curly
 cv75 = 1    # 4 closed contour crossing
@@ -140,22 +140,39 @@ shape = 400
 menu  = 400
 css   = 400
 
+[buildPlans.iosevka-comfy.weights.book]
+shape = 450
+menu  = 450
+css   = 450
+
 [buildPlans.iosevka-comfy.weights.bold]
 shape = 700
 menu  = 700
 css   = 700
+
+[buildPlans.iosevka-comfy.weights.extrabold]
+shape = 800
+menu  = 800
+css   = 800
 
 # End weight section
 ###################################################################################################
 
 ###################################################################################################
 # Override default building slope sets
-# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slopes would be built.
 
-[buildPlans.iosevka-comfy.slopes]
-upright = "normal"
-italic = "italic"
+[buildPlans.iosevka-comfy.slopes.upright]
+angle = 0             # Angle in degrees. Valid range [0, 15]
+shape = "upright"     # Slope grade used for shape selection.  `upright` | `oblique` | `italic`
+menu  = "upright"     # Slope grade used for naming.           `upright` | `oblique` | `italic`
+css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `oblique` | `italic`
+
+[buildPlans.iosevka-comfy.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu  = "italic"
+css   = "italic"
 
 # End slope section
 ###################################################################################################
@@ -196,12 +213,6 @@ css   = "normal"   # "font-stretch' property of webfont CSS.
 
 [buildPlans.iosevka-comfy.metric-override]
 leading = 1100
-
-[buildPlans.iosevka-comfy.metric-override.multiplies]
-sb = 1.0625
-
-[buildPlans.iosevka-comfy.metric-override.adds]
-sb = 15
 
 # End metric override section
 ###################################################################################################
