@@ -10,8 +10,8 @@ serifs wherever those are required to both impose an aesthetic rhythm
 and keep characters distinct from each other.  Roman and italic variants
 are made to look more consistent while retaining their stylistic
 features (e.g. the italics do not have calligraphic tendencies that
-greatly contrast with more rigid or straight roman shapes, but still use
-carefully selected glyphs that are distinct from their roman
+greatly contrast with more rigid or straight roman shapes---they still
+use carefully selected glyphs that are distinct from their roman
 counterparts albeit in more nuanced ways).
 
 The overall appearance of the typeface is optimised for small point
