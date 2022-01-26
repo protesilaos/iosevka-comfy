@@ -1,77 +1,88 @@
 # Iosevka Comfy
 
-Private build of the Iosevka monospaced font, with a rounded style,
-adjusted metrics, and overrides for almost all individual glyphs in both
-roman (upright) and italic (slanted) variants.
+Private build of [Iosevka](https://github.com/be5invis/Iosevka), with a
+rounded style and open shapes, adjusted metrics, and overrides for
+almost all individual glyphs in both roman (upright) and italic
+(slanted) variants.
 
-Iosevka Comfy is wider and more vertically compact than the standard
-upstream configuration.  Glyphs are rounder and have tailed ends or
-serifs wherever those are required to both impose an aesthetic rhythm
-and keep characters distinct from each other.  Roman and italic variants
-are made to look more consistent while retaining their stylistic
-features (e.g. the italics do not have calligraphic tendencies that
-greatly contrast with more rigid or straight roman shapes---they still
-use carefully selected glyphs that are distinct from their roman
-counterparts albeit in more nuanced ways).
+![iosevka-comfy-sample-light](./iosevka-comfy-sample-light.png)
+
+![iosevka-comfy-sample-dark](./iosevka-comfy-sample-dark.png)
+
+## Details of the typeface
+
+Iosevka Comfy is more vertically compact than the standard upstream
+configuration.  Glyphs are rounder and have tailed ends or serifs only
+when those are required to both impose a predictable rhythm and keep
+characters distinct from each other.
+
+The round and open shapes, tailed ends, and earless shoulders, can be
+discerned in those patterns:
+
+* `a`, `o`, `u` (e.g. `anonymous`);
+* `i`, `t`, `l` (e.g. `illicit`);
+* `j`, `g`, `y` (e.g. `jiggly`);
+* `b`, `d` (e.g. `bidirectional`);
+* `n`, `m` (e.g. `numeral`);
+* `p`, `q` (e.g. `equip`);
+* `6`, `9`, `&`.
+
+Roman and italic variants are made to look more consistent while
+retaining their stylistic features.  Unlike the default Iosevka style,
+the upright glyphs do not have a mixture of straight/blocky and curved
+or serified characters (special exceptions notwithstanding).  While the
+italics do not have calligraphic tendencies that would greatly contrast
+with their counterparts.  The differences within each character set and
+between the variants themselves are nuanced.  The intent is to make
+everything feel part of the same aesthetic.  Distinctions are drawn on
+the premise of contributing to the demands of the design without ever
+calling attention to themselves.
 
 The overall appearance of the typeface is optimised for small point
-sizes.  This informs the choice of certain glyphs such as `D` with a top
-and bottom serif and a curved body to clearly differentiate it from the
-capital `O`, or an `m` with a short middle leg to prevent the letter's
-lines from visually blending into a box-like shape (always referring to
-small point sizes).  For larger sizes, these details are not strictly
-necessary, though Iosevka Comfy should still look decent despite their
-presence.
+sizes.  This informs the choice of certain glyphs that break the
+established patterns:
 
-Considering the line height and width as well as the desired appearance
-of each glyph, the optimal point values are: 8, 10, 12, 13.  Other sizes
-which are almost as good: 9, 10.5, 13.5.
+* The `D` has a top and bottom serif and a curved body to disambiguate
+  it from the capital `O`.
+
+* Same principle for `I` whose serifs help one tell it apart from `l`.
+
+* A special stylistic case is `m` which has a short middle leg to
+  prevent the letter's lines from visually blending into a box-like
+  shape, as is the case with the default Iosevka at small point sizes.
+  It otherwise exhibits the same rounded/earless patterns.
+
+For larger sizes, those exceptions are not necessary, though Iosevka
+Comfy should look decent despite their presence.
+
+Optimal point sizes for the author are: 8, 10, 11, 13.  While "false
+friends" which distort the height of characters are: 10.5, 12, 13.5.
 
 [ For the `:height` face attribute in GNU Emacs, the value is equal to
   the point size × 10. ]
 
-## Build information
-
-Iosevka Comfy is configured in accordance with the documentation of the
-upstream project: <https://github.com/be5invis/Iosevka>.  This
-practically means that we define our `private-build-plans.toml`, install
-the `npm` dependencies, and then build the `.ttf` files with the
-following command:
-
-```sh
-npm run build -- ttf::iosevka-comfy
-```
-
-The last update to Iosevka Comfy was done on 2022-01-25 using upstream
-Iosevka version `v11.2.7` at commit `f630c223`.
-
-Each file is provided as-is in the hope that it may prove useful, but
-is otherwise intended only for my private use.
-
-## Character sample and common patterns
-
-Note that for the sake of this demonstration, the point size is higher
-than the intended target range.
-
-![iosevka-comfy-sample-light](./iosevka-comfy-sample-light.png)
-
 ## Comparison to base Iosevka
 
 This is a regular Emacs session with the default font set to point size
-10 (a `:height` face attribute of 100).  Obverse, in particular, Iosevka
-Comfy's proportions (wider, shorter line height than Iosevka) and the
-less exaggerated differences between its roman and italic characters to
-make the latter look closer to their roman counterparts without
-detracting from their subtleties (e.g. for the italic variant of Iosevka
-Comfy the `f` is not cursive, the `y` is not so curvy, the descender of
-the `g` is not closed, while the `t`, `i`, `l` have short tails, etc.).
+10 (a `:height` face attribute of 100).
 
 ![iosevka-comfy-10pt](./iosevka-comfy-10pt.png)
 
 ![iosevka-10pt](./iosevka-10pt.png)
 
-For Iosevka Comfy to have roughly the same line width as Iosevka, it has
-to be set at one point less.  It still has a more compact line height.
-Compare the following screenshot to the one above:
+## Build information
 
-![iosevka-comfy-9pt](./iosevka-comfy-9pt.png)
+Iosevka Comfy is configured in accordance with the documentation of the
+upstream project.  This practically means that we define our
+`private-build-plans.toml`, install the `npm` dependencies, and then
+build the `.ttf` files with the following command:
+
+```sh
+npm run build -- ttf::iosevka-comfy
+```
+
+The last update to Iosevka Comfy was done on 2022-01-26 using upstream
+version `v11.2.7`.
+
+Each file is provided as-is in the hope that it may prove useful, but
+is otherwise intended only for my private use.

@@ -137,11 +137,6 @@ shape = 400
 menu  = 400
 css   = 400
 
-[buildPlans.iosevka-comfy.weights.book]
-shape = 450
-menu  = 450
-css   = 450
-
 [buildPlans.iosevka-comfy.weights.bold]
 shape = 700
 menu  = 700
@@ -185,17 +180,17 @@ css   = "italic"
 #             If you decide to use custom widths you have to define all the widths you plan to use,
 #             otherwise they will not be built.
 
+# [buildPlans.iosevka-comfy.widths.condensed]
+# shape = 485
+# menu  = 3
+# css   = "condensed"
+
 [buildPlans.iosevka-comfy.widths.normal]
-shape = 550        # Unit Width, measured in 1/1000 em.
+shape = 525        # Unit Width, measured in 1/1000 em.
 menu  = 5          # Width grade for the font's names.
 css   = "normal"   # "font-stretch' property of webfont CSS.
 
-# [buildPlans.iosevka-comfy.widths.normal]
-# shape = 500        # Unit Width, measured in 1/1000 em.
-# menu  = 5          # Width grade for the font's names.
-# css   = "normal"   # "font-stretch' property of webfont CSS.
-
-# [buildPlans.iosevka-comfy.widths.extended]
+# [buildPlans.iosevka-comfy.widths.expanded]
 # shape = 600
 # menu  = 7
 # css   = "expanded"
