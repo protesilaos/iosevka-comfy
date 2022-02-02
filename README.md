@@ -27,6 +27,8 @@ discerned in those patterns:
 * `p`, `q` (e.g. `equip`);
 * `6`, `9`, `&`.
 
+### Considerations for romans and italics
+
 Roman and italic variants are made to look more consistent while
 retaining their stylistic features.  Unlike the default Iosevka style,
 the upright glyphs do not have a mixture of straight/blocky and curved
@@ -38,25 +40,48 @@ everything feel part of the same aesthetic.  Distinctions are drawn on
 the premise of contributing to the demands of the design without ever
 calling attention to themselves.
 
+For italics, the earless shoulders in glyphs such as `n`, `m`, `p`, `q`
+change slightly to have a sturdier top which helps compensate for the
+added slant.  Otherwise they would feel more rounded than their roman
+counterparts.  We do not want that added implicit emphasis because the
+slant is already enough: to emphasise the emphasis is the kind of
+exaggeration that Iosevka Comfy strives to eliminate.
+
+### The target of small point size
+
 The overall appearance of the typeface is optimised for small point
 sizes.  This informs the choice of certain glyphs that break the
 established patterns:
+
+* The `a` has a serified or more blocky end even though other glyphs
+  have tailed ends.  This is because at small point sizes the single
+  storey `a` can be mistaken for an `o` as the tail is too subtle.  The
+  serif fixes that.  Why single storey?  Because a double storey is too
+  blocky at small sizes.
 
 * The `D` has a top and bottom serif and a curved body to disambiguate
   it from the capital `O`.
 
 * Same principle for `I` whose serifs help one tell it apart from `l`.
 
-* A special stylistic case is `m` which has a short middle leg to
-  prevent the letter's lines from visually blending into a box-like
-  shape, as is the case with the default Iosevka at small point sizes.
-  It otherwise exhibits the same rounded/earless patterns.
+* The `m` has a short middle leg to prevent the letter's lines from
+  visually blending into a box-like shape (as is the case with the
+  default Iosevka at small point sizes).  It otherwise exhibits the same
+  rounded/earless patterns.
 
-For larger sizes, those exceptions are not necessary, though Iosevka
-Comfy should look decent despite their presence.
+It is important to stress that these decisions are made in light of the
+target range of point sizes, which is between 8 and 13.  If we were to
+design towards another end, then we would do things differently (the
+open shapes would not be necessary, the aforementioned exceptions would
+not be required, and so on).
 
 Optimal point sizes for the author are: 8, 10, 11, 13.  While "false
-friends" which distort the height of characters are: 10.5, 12, 13.5.
+friends" which increase the height of characters without actually
+adjusting the line width and height are: 10.5, 12, 13.5.  We call them
+"false friends" because while they appear to have an effect, they do not
+actually increase the size of the font consistently: they break
+expectations and make the overall appearance feel more vertically
+compact than it should be.
 
 [ For the `:height` face attribute in GNU Emacs, the value is equal to
   the point size × 10. ]
