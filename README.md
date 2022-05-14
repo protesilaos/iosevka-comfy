@@ -97,7 +97,7 @@ This is a regular Emacs session with the default font set to point size
 
 ## Variants
 
-Iosevka Comfy comes in three variants, all of which share the same
+Iosevka Comfy comes in four variants, all of which share the same
 stylistic overrides, as documented above.
 
 * `iosevka-comfy` is monospaced and supports ligatures.  Apart from
@@ -112,6 +112,10 @@ stylistic overrides, as documented above.
 * `iosevka-comfy-duo` is quasi-proportional and supports ligatures.  The
   naturally wide glyphs, such as `m`, are allowed to occupy two blocks
   instead of one.
+
+* `iosevka-comfy-wide` is the same as `iosevka-comfy` except it is
+  noticeably wider.  It also looks taller than `iosevka-comfy` even
+  though both variants fit the same number of lines on a screen.
 
 ## Install on GNU/Linux
 
@@ -130,10 +134,10 @@ upstream project.  This practically means that we define our
 build the `.ttf` files with the following command:
 
 ```sh
-npm run build -- ttf::iosevka-comfy ttf::iosevka-comfy-fixed ttf::iosevka-comfy-duo
+npm run build -- ttf::iosevka-comfy ttf::iosevka-comfy-fixed ttf::iosevka-comfy-duo ttf::iosevka-comfy-wide
 ```
 
-The last update to Iosevka Comfy was done on 2022-05-11 using upstream
+The last update to Iosevka Comfy was done on 2022-05-14 using upstream
 version `v15.3.0`, commit `e885ebaf`.
 
 Each file is provided as-is in the hope that it may prove useful, but
