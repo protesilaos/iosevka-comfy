@@ -33,19 +33,21 @@ Roman and italic variants are made to look more consistent while
 retaining their stylistic features.  Unlike the default Iosevka style,
 the upright glyphs do not have a mixture of straight/blocky and curved
 or serified characters (special exceptions notwithstanding).  While the
-italics do not have calligraphic tendencies that would greatly contrast
-with their counterparts.  The differences within each character set and
+italics do not have calligraphic tendencies that greatly contrast with
+their counterparts.  The differences within each character set and
 between the variants themselves are nuanced.  The intent is to make
 everything feel part of the same aesthetic.  Distinctions are drawn on
 the premise of contributing to the demands of the design without ever
-calling attention to themselves.
+calling attention to themselves (as opposed to sporadic calligraphic
+glyphs amid an otherwise austere presentation).
 
 For italics, the earless shoulders in glyphs such as `n`, `m`, `p`, `q`
 change slightly to have a sturdier top which helps compensate for the
 added slant.  Otherwise they would feel more rounded than their roman
-counterparts.  We do not want that added implicit emphasis because the
-slant is already enough: to emphasise the emphasis is the kind of
-exaggeration that Iosevka Comfy strives to eliminate.
+counterparts.  We do not want that added implicit emphasis of extra
+roundedness because the slant is already sufficient: to emphasise the
+emphasis is the kind of exaggeration that Iosevka Comfy strives to
+eliminate.
 
 ### The target of small point size
 
@@ -53,14 +55,17 @@ The overall appearance of the typeface is optimised for small point
 sizes.  This informs the choice of certain glyphs that break the
 established patterns:
 
-* The `a` has a serified or more blocky end even though other glyphs
-  have tailed ends.  This is because at small point sizes the single
-  storey `a` can be mistaken for an `o` as the tail is too subtle.  The
-  serif fixes that.  Why single storey?  Because a double storey is too
-  blocky at small sizes.
+* The `a` has a serified or more blocky end, even though other glyphs
+  have tailed ("pointier") ends.  This is because at small point sizes
+  the single storey `a` can be mistaken for an `o` as the tail is too
+  subtle.  The serif fixes that.  Why single storey?  Because a double
+  storey is too blocky at small sizes and thus inconsistent with the
+  open character of the typeface.
 
 * The `D` has a top and bottom serif and a curved body to disambiguate
-  it from the capital `O`.
+  it from the capital `O` (which is more round).  At small point sizes,
+  `TODO` looks clear whereas with a non-serif `D` it reads like `TOOO`
+  (the `D` is almost the same as an `O`).
 
 * Same principle for `I` whose serifs help one tell it apart from `l`.
 
@@ -69,11 +74,15 @@ established patterns:
   default Iosevka at small point sizes).  It otherwise exhibits the same
   rounded/earless patterns.
 
+The target of small point sizes also informs the decision to use squared
+punctuation marks and the `%` sign (the percent looks like `./.` instead
+of `o/o`).  They look more crisp.
+
 It is important to stress that these decisions are made in light of the
 target range of point sizes, which is between 8 and 13.  If we were to
 design towards another end, then we would do things differently (the
 open shapes would not be necessary, the aforementioned exceptions would
-not be required, and so on).
+not be required, punctuation marks could be circular, and so on).
 
 Optimal point sizes for the author are: 8, 10, 11, 13.  While "false
 friends" which increase the height of characters without actually
@@ -82,6 +91,9 @@ adjusting the line width and height are: 10.5, 12, 13.5.  We call them
 actually increase the size of the font consistently: they break
 expectations and make the overall appearance feel more vertically
 compact than it should be.
+
+Those granted, Iosevka Comfy looks decent at larger point sizes.  The
+author uses it for presentations.
 
 [ For the `:height` face attribute in GNU Emacs, the value is equal to
   the point size × 10. ]
@@ -97,7 +109,7 @@ This is a regular Emacs session with the default font set to point size
 
 ## Variants
 
-Iosevka Comfy comes in four variants, all of which share the same
+Iosevka Comfy comes in five variants, all of which share the same
 stylistic overrides, as documented above.
 
 * `iosevka-comfy` is monospaced and supports ligatures.  Apart from
@@ -117,12 +129,19 @@ stylistic overrides, as documented above.
   noticeably wider.  It also looks taller than `iosevka-comfy` even
   though both variants fit the same number of lines on a screen.
 
+* `iosevka-comfy-wide-fixed` same as `iosevka-comfy-wide` though it is
+  strictly monospaced and does not support ligatures.
+
 ## Install on GNU/Linux
 
 Unless you have some exotic system, in which case you know what you are
 doing, you can install fonts for your local user by copying the `.ttf`
 files or their directories in `~/.local/share/fonts/`.  For system-wide
 installation, place them in `/usr/share/fonts/`.
+
+Depending on your system, you may need to delete the `tff` or
+`ttf-unhinted` builds.  Though this is not strictly necessary, as the
+system knows which one to pick.
 
 When in doubt, install locally.
 

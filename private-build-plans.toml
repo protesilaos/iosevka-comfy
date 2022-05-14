@@ -78,8 +78,8 @@ cv95 = 2    # ≥ equal-or-{higher,lower} slanted
 cv96 = 1    # ' single quote straight
 cv97 = 1    # ` grave/backtick straight
 cv98 = 1    # ? smooth
-cv99 = 1    # .:; circular punctuation marks
-VXDD = 1    # ijäöü circular diacretics
+cv99 = 2    # .:; square punctuation marks
+VXDD = 2    # ijäöü square diacretics
 
 # Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
 [buildPlans.iosevka-comfy.variants.upright]
@@ -304,8 +304,8 @@ cv95 = 2    # ≥ equal-or-{higher,lower} slanted
 cv96 = 1    # ' single quote straight
 cv97 = 1    # ` grave/backtick straight
 cv98 = 1    # ? smooth
-cv99 = 1    # .:; circular punctuation marks
-VXDD = 1    # ijäöü circular diacretics
+cv99 = 2    # .:; square punctuation marks
+VXDD = 2    # ijäöü square diacretics
 
 # Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
 [buildPlans.iosevka-comfy-fixed.variants.upright]
@@ -473,8 +473,8 @@ cv95 = 2    # ≥ equal-or-{higher,lower} slanted
 cv96 = 1    # ' single quote straight
 cv97 = 1    # ` grave/backtick straight
 cv98 = 1    # ? smooth
-cv99 = 1    # .:; circular punctuation marks
-VXDD = 1    # ijäöü circular diacretics
+cv99 = 2    # .:; square punctuation marks
+VXDD = 2    # ijäöü square diacretics
 
 # Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
 [buildPlans.iosevka-comfy-duo.variants.upright]
@@ -642,8 +642,8 @@ cv95 = 2    # ≥ equal-or-{higher,lower} slanted
 cv96 = 1    # ' single quote straight
 cv97 = 1    # ` grave/backtick straight
 cv98 = 1    # ? smooth
-cv99 = 1    # .:; circular punctuation marks
-VXDD = 1    # ijäöü circular diacretics
+cv99 = 2    # .:; square punctuation marks
+VXDD = 2    # ijäöü square diacretics
 
 # Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
 [buildPlans.iosevka-comfy-wide.variants.upright]
@@ -733,4 +733,173 @@ menu  = 7
 css   = "normal"
 
 [buildPlans.iosevka-comfy-wide.metric-override]
+leading = 1100
+
+
+
+# Like iosevka-comfy-wide but fixed monospace (no ligatures)
+# ----------------------------------------------------------
+[buildPlans.iosevka-comfy-wide-fixed]
+family = "Iosevka Comfy Wide Fixed"
+spacing = "fixed"
+serifs = "sans"
+
+# Optional; Configure single character's variant
+[buildPlans.iosevka-comfy-wide-fixed.variants.design]
+cv01 = 1    # A cap straight
+cv02 = 1    # B cap straight
+cv03 = 1    # C cap serifless
+cv04 = 6    # D cap curly with top and bottom serif (without serifs TODO reads like TOOO at small point sizes)
+cv05 = 1    # E cap serifless
+cv06 = 1    # F cap serifless
+cv07 = 4    # G cap toothed
+cv08 = 1    # H cap serifless
+cv09 = 1    # I cap long serifs
+cv10 = 2    # J cap serified
+cv11 = 2    # K cap curly
+cv12 = 1    # L cap serifless
+cv13 = 3    # M cap short middle leg slanted sides
+cv14 = 1    # N cap symmetric
+cv15 = 1    # P cap straight
+cv16 = 4    # Q cap crossing tail
+cv17 = 1    # R cap straight
+cv18 = 1    # S cap serifless
+cv19 = 1    # T cap serifless
+cv20 = 3    # U cap serifless
+cv21 = 1    # V cap straight
+cv22 = 1    # W straight
+cv23 = 1    # X cap straight
+cv24 = 1    # Y cap straight
+cv25 = 1    # Z cap straight
+cv26 = 10   # a single storey earless tailed bottom
+cv27 = 1    # b toothed
+cv28 = 1    # c serifless
+cv29 = 1    # d toothed
+cv33 = 1    # h straight
+cv34 = 10   # i serified flat tailed
+cv35 = 6    # j flat hook serified
+cv37 = 10   # l serified flat tailed
+cv42 = 9    # r compact
+cv43 = 1    # s serifless
+cv44 = 2    # t flat hook
+cv45 = 4    # u tailed
+cv49 = 6    # y cursive flat terminal hook
+cv53 = 1    # Λ, Δ lambda and delta cap straight
+cv54 = 2    # α alpha straight tailed
+VXAA = 1    # δ delta rounded top
+cv55 = 1    # Γ gamma cap straight
+cv56 = 6    # ι iota serified flat tailed
+cv57 = 2    # λ lambda top tailed
+VXAC = 1    # μ me tailless
+VXAB = 2    # ξ xe flat top
+cv71 = 13   # 0 oval dashed forward slash
+cv74 = 2    # 3 arched
+cv76 = 2    # 5 open contour
+cv78 = 1    # 7 straight
+cv79 = 3    # 8 two asymmetric circles
+cv81 = 2    # ~ tilde low
+cv82 = 2    # * asterisk five-pointed low
+cv83 = 1    # _ underscore right below baseline
+cv85 = 1    # ^ uptick high
+cv86 = 1    # ( parentheses normal slope
+cv87 = 2    # { braces curly
+cv88 = 1    # # column straight
+cv90 = 6    # @ four-fold, solid interior, tall outline
+cv91 = 2    # $ dollar strike through
+cv92 = 2    # ¢ cent strike through
+cv93 = 1    # % percent dots
+cv94 = 1    # | bar natural slope
+cv95 = 2    # ≥ equal-or-{higher,lower} slanted
+cv96 = 1    # ' single quote straight
+cv97 = 1    # ` grave/backtick straight
+cv98 = 1    # ? smooth
+cv99 = 2    # .:; square punctuation marks
+VXDD = 2    # ijäöü square diacretics
+
+# Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
+[buildPlans.iosevka-comfy-wide-fixed.variants.upright]
+cv30 = 1    # e straight
+cv31 = 16   # f serifless bottom flat top crossbar at x height
+cv32 = 9    # g single storey flat hook earless cornered top
+cv36 = 1    # k straight
+cv38 = 6    # m earless double arch short middle leg
+cv39 = 3    # n earless straight
+cv40 = 2    # p earless
+cv41 = 2    # q earless
+cv46 = 1    # v straight
+cv47 = 1    # w straight
+cv48 = 1    # x straight
+cv50 = 1    # z straight
+cv72 = 3    # 1 serified with base
+cv73 = 1    # 2 straight
+cv75 = 3    # 4 semi-open contour
+cv77 = 3    # 6 straight
+cv80 = 3    # 9 straight
+cv89 = 2    # & et open top (ampersand)
+
+# Optional; Configure single character's variant for Italic only; Overrides [design]
+[buildPlans.iosevka-comfy-wide-fixed.variants.italic]
+cv30 = 2    # e curly
+cv31 = 14   # f extended flat top bottom hook
+cv32 = 7    # g single storey flat hook
+cv36 = 2    # k curly
+cv38 = 2    # m straight middle shortleg
+cv39 = 1    # n straight
+cv40 = 1    # p straight
+cv41 = 1    # q straight
+cv46 = 2    # v curly
+cv47 = 2    # w curly short middle top
+cv48 = 2    # x curly
+cv50 = 4    # z curly
+cv72 = 2    # 1 serified no base
+cv73 = 2    # 2 curly
+cv75 = 1    # 4 closed contour crossing
+cv77 = 1    # 6 closed contour
+cv80 = 1    # 9 closed contour
+cv89 = 4    # & et open top toothed (ampersand)
+
+[buildPlans.iosevka-comfy-wide-fixed.weights.light]
+shape = 300
+menu  = 300
+css   = 300
+
+[buildPlans.iosevka-comfy-wide-fixed.weights.semilight]
+shape = 350
+menu  = 350
+css   = 350
+
+[buildPlans.iosevka-comfy-wide-fixed.weights.regular]
+shape = 400
+menu  = 400
+css   = 400
+
+[buildPlans.iosevka-comfy-wide-fixed.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+
+[buildPlans.iosevka-comfy-wide-fixed.weights.extrabold]
+shape = 800
+menu  = 800
+css   = 800
+
+[buildPlans.iosevka-comfy-wide-fixed.slopes.upright]
+angle = 0
+shape = "upright"
+menu  = "upright"
+css   = "normal"
+
+[buildPlans.iosevka-comfy-wide-fixed.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu  = "italic"
+css   = "italic"
+
+# For the default width, check buildPlans.iosevka-comfy.widths.normal
+[buildPlans.iosevka-comfy-wide-fixed.widths.normal]
+shape = 625
+menu  = 7
+css   = "normal"
+
+[buildPlans.iosevka-comfy-wide-fixed.metric-override]
 leading = 1100
