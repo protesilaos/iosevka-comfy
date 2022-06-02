@@ -132,6 +132,14 @@ stylistic overrides, as documented above.
 * `iosevka-comfy-wide-fixed` same as `iosevka-comfy-wide` though it is
   strictly monospaced and does not support ligatures.
 
+Note that the `iosevka-comfy-duo`, `iosevka-comfy-wide`, and
+`iosevka-comfy-wide-fixed` use a different style for the `m` character.
+Instead of the one with a shorter middle leg, they let all legs have the
+same length.  The short middle leg in `m` that we need in the narrow
+monospaced variants is necessary for legibility, especially at small
+point sizes.  Otherwise it is a gimmick, so we remove it in the "wider"
+builds.
+
 ## Install on GNU/Linux
 
 Unless you have some exotic system, in which case you know what you are
@@ -150,14 +158,19 @@ When in doubt, install locally.
 Iosevka Comfy is configured in accordance with the documentation of the
 upstream project.  This practically means that we define our
 `private-build-plans.toml`, install the `npm` dependencies, and then
-build the `.ttf` files with the following command:
+build the `.ttf` files with something like the following for each
+variant:
 
 ```sh
-npm run build -- ttf::iosevka-comfy ttf::iosevka-comfy-fixed ttf::iosevka-comfy-duo ttf::iosevka-comfy-wide
+npm run build -- ttf::iosevka-comfy
 ```
 
-The last update to Iosevka Comfy was done on 2022-05-14 using upstream
-version `v15.3.0`, commit `e885ebaf`.
+It seems that queueing the builds, such as with a `for` loop, does not
+work as intended: the variants are not differentiated from the base
+`iosevka-comfy` build.
+
+The last update to Iosevka Comfy was done on 2022-06-02 using upstream
+version `v15.4.2`, commit `76a87155`.
 
 Each file is provided as-is in the hope that it may prove useful, but
 is otherwise intended only for my private use.
