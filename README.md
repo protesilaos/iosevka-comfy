@@ -147,7 +147,7 @@ doing, you can install fonts for your local user by copying the `.ttf`
 files or their directories in `~/.local/share/fonts/`.  For system-wide
 installation, place them in `/usr/share/fonts/`.
 
-Depending on your system, you may need to delete the `tff` or
+Depending on your system, you may need to delete the `ttf` or
 `ttf-unhinted` builds.  Though this is not strictly necessary, as the
 system knows which one to pick.
 
