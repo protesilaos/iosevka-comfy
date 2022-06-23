@@ -75,8 +75,8 @@ established patterns:
   rounded/earless patterns.
 
 The target of small point sizes also informs the decision to use squared
-punctuation marks and the `%` sign (the percent looks like `./.` instead
-of `o/o`).  They look more crisp.
+punctuation marks and a dotted `%` sign (the percent looks like `./.`
+instead of `o/o`).  They look more crisp.
 
 It is important to stress that these decisions are made in light of the
 target range of point sizes, which is between 8 and 13.  If we were to
