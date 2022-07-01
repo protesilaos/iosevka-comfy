@@ -74,6 +74,8 @@ established patterns:
   default Iosevka at small point sizes).  It otherwise exhibits the same
   rounded/earless patterns.
 
+[ Also read the section "Deviations from the regular style". ]
+
 The target of small point sizes also informs the decision to use squared
 punctuation marks and a dotted `%` sign (the percent looks like `./.`
 instead of `o/o`).  They look more crisp.
@@ -101,11 +103,14 @@ author uses it for presentations.
 ## Comparison to base Iosevka
 
 This is a regular Emacs session with the default font set to point size
-10 (a `:height` face attribute of 100).
+10 (a `:height` face attribute of 100).  In the first picture we have
+Iosevka Comfy and regular Iosevka in the second.  Notice how Iosevka
+Comfy is more vertically compact, while you can also discern the stylic
+differences between the two typefaces.
 
-![iosevka-comfy-10pt](./iosevka-comfy-10pt.png)
+![iosevka-comfy-vertical-spacing](.2022-07-01-iosevka-comfy-vertical-spacing.png)
 
-![iosevka-10pt](./iosevka-10pt.png)
+![iosevka-vertical-spacing](./2022-07-01-iosevka-vertical-spacing.png)
 
 ## Variants
 
@@ -132,13 +137,28 @@ stylistic overrides, as documented above.
 * `iosevka-comfy-wide-fixed` same as `iosevka-comfy-wide` though it is
   strictly monospaced and does not support ligatures.
 
-Note that the `iosevka-comfy-duo`, `iosevka-comfy-wide`, and
-`iosevka-comfy-wide-fixed` use a different style for the `m` character.
-Instead of the one with a shorter middle leg, they let all legs have the
-same length.  The short middle leg in `m` that we need in the narrow
-monospaced variants is necessary for legibility, especially at small
-point sizes.  Otherwise it is a gimmick, so we remove it in the "wider"
-builds.
+## Deviations from the regular style
+
+The variants of Iosevka Comfy are subdivided into "narrow" and "wide".
+The former consists of `iosevka-comfy` and `iosevka-comfy-fixed`.  The
+latter includes `iosevka-comfy-wide`, `iosevka-comfy-wide-fixed`, and
+the quasi-proportional `iosevka-comfy-duo`.
+
+Due to the relaxed spacing requirements and concomitant legibility
+considerations, the wide variants have stylistic deviations from their
+counterparts.  In detail:
+
+* The `m` character has three legs of equal length, insetad of a shorter
+  middle leg.  The short middle leg in the narrow variants is necessary
+  for legibility, especially at small point sizes (otherwise the
+  character's legs visually blend into what appears to be a solid
+  block).
+
+* The `0` has a forward slash that cuts diagonally through the middle of
+  the circle, connecting the bottom left part to the top right of the
+  oval shape.  Whereas the narrow variants have a dashed forward slash
+  which does not connect the two sides as it is positioned inside the
+  oval shape.
 
 ## Install on GNU/Linux
 
@@ -169,8 +189,8 @@ It seems that queueing the builds, such as with a `for` loop, does not
 work as intended: the variants are not differentiated from the base
 `iosevka-comfy` build.
 
-The last update to Iosevka Comfy was done on 2022-06-02 using upstream
-version `v15.4.2`, commit `76a87155`.
+The last update to Iosevka Comfy was done on 2022-07-01 using upstream
+version `v15.5.2`, commit `a0f82f14`.
 
 Each file is provided as-is in the hope that it may prove useful, but
 is otherwise intended only for my private use.
