@@ -108,7 +108,7 @@ Iosevka Comfy and regular Iosevka in the second.  Notice how Iosevka
 Comfy is more vertically compact, while you can also discern the stylic
 differences between the two typefaces.
 
-![iosevka-comfy-vertical-spacing](.2022-07-01-iosevka-comfy-vertical-spacing.png)
+![iosevka-comfy-vertical-spacing](./2022-07-01-iosevka-comfy-vertical-spacing.png)
 
 ![iosevka-vertical-spacing](./2022-07-01-iosevka-vertical-spacing.png)
 
