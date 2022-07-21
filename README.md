@@ -1,9 +1,9 @@
 # Iosevka Comfy
 
-Private build of [Iosevka](https://github.com/be5invis/Iosevka), with a
-rounded style and open shapes, adjusted metrics, and overrides for
-almost all individual glyphs in both roman (upright) and italic
-(slanted) variants.
+highly customised build of the [Iosevka
+typeface](https://github.com/be5invis/Iosevka), with a rounded style and
+open shapes, adjusted metrics, and overrides for almost all individual
+glyphs in both roman (upright) and italic (slanted) variants.
 
 ![iosevka-comfy-sample-light](./iosevka-comfy-sample-light.png)
 
@@ -41,13 +41,13 @@ the premise of contributing to the demands of the design without ever
 calling attention to themselves (as opposed to sporadic calligraphic
 glyphs amid an otherwise austere presentation).
 
-For italics, the earless shoulders in glyphs such as `n`, `m`, `p`, `q`
-change slightly to have a sturdier top which helps compensate for the
-added slant.  Otherwise they would feel more rounded than their roman
-counterparts.  We do not want that added implicit emphasis of extra
-roundedness because the slant is already sufficient: to emphasise the
-emphasis is the kind of exaggeration that Iosevka Comfy strives to
-eliminate.
+For italics, the earless shoulders and rounded bottom in the glyphs `a`,
+`b`, `d,` `n`, `m`, `p`, `q`, `u` change slightly to have a sturdier
+ending which helps compensate for the added slant.  Otherwise they would
+feel more rounded than their roman counterparts.  We do not want that
+added implicit emphasis of extra roundedness because the slant is
+already sufficient: to emphasise the emphasis is the kind of
+exaggeration that Iosevka Comfy strives to eliminate.
 
 ### The target of small point size
 
@@ -55,17 +55,10 @@ The overall appearance of the typeface is optimised for small point
 sizes.  This informs the choice of certain glyphs that break the
 established patterns:
 
-* The `a` has a serified or more blocky end, even though other glyphs
-  have tailed ("pointier") ends.  This is because at small point sizes
-  the single storey `a` can be mistaken for an `o` as the tail is too
-  subtle.  The serif fixes that.  Why single storey?  Because a double
-  storey is too blocky at small sizes and thus inconsistent with the
-  open character of the typeface.
-
 * The `D` has a top and bottom serif and a curved body to disambiguate
   it from the capital `O` (which is more round).  At small point sizes,
-  `TODO` looks clear whereas with a non-serif `D` it reads like `TOOO`
-  (the `D` is almost the same as an `O`).
+  our `TODO` looks clear whereas with a non-serif `D` it reads like
+  `TOOO` (the `D` is almost the same as an `O`).
 
 * Same principle for `I` whose serifs help one tell it apart from `l`.
 
@@ -81,13 +74,14 @@ punctuation marks and a dotted `%` sign (the percent looks like `./.`
 instead of `o/o`).  They look more crisp.
 
 It is important to stress that these decisions are made in light of the
-target range of point sizes, which is between 8 and 13.  If we were to
-design towards another end, then we would do things differently (the
-open shapes would not be necessary, the aforementioned exceptions would
-not be required, punctuation marks could be circular, and so on).
+target range of small point sizes, which for the author is between 8
+and 13.  If we were to design towards another end, then we would do
+things differently (the open shapes would not be necessary, the
+aforementioned exceptions would not be required, punctuation marks could
+be circular, and so on).
 
-Optimal point sizes for the author are: 8, 10, 11, 13.  While "false
-friends" which increase the height of characters without actually
+Optimal small point sizes for the author are: 8, 10, 11, 13.  While
+"false friends" which increase the height of characters without actually
 adjusting the line width and height are: 10.5, 12, 13.5.  We call them
 "false friends" because while they appear to have an effect, they do not
 actually increase the size of the font consistently: they break
@@ -95,7 +89,8 @@ expectations and make the overall appearance feel more vertically
 compact than it should be.
 
 Those granted, Iosevka Comfy looks decent at larger point sizes.  The
-author uses it for presentations.
+author uses it for presentations because its open shapes make it easy to
+read.
 
 [ For the `:height` face attribute in GNU Emacs, the value is equal to
   the point size × 10. ]
@@ -108,9 +103,15 @@ Iosevka Comfy and regular Iosevka in the second.  Notice how Iosevka
 Comfy is more vertically compact, while you can also discern the stylic
 differences between the two typefaces.
 
-![iosevka-comfy-vertical-spacing](./2022-07-01-iosevka-comfy-vertical-spacing.png)
+![iosevka-comfy-vertical-spacing](./iosevka-comfy-vertical-spacing.png)
 
-![iosevka-vertical-spacing](./2022-07-01-iosevka-vertical-spacing.png)
+![iosevka-vertical-spacing](./iosevka-vertical-spacing.png)
+
+And the same idea with the point size at 17 (Emacs `:height` 170):
+
+![iosevka-comfy-vertical-spacing](./iosevka-comfy-large-vertical-spacing.png)
+
+![iosevka-vertical-spacing](./iosevka-vertical-large-spacing.png)
 
 ## Variants
 
@@ -189,8 +190,8 @@ It seems that queueing the builds, such as with a `for` loop, does not
 work as intended: the variants are not differentiated from the base
 `iosevka-comfy` build.
 
-The last update to Iosevka Comfy was done on 2022-07-01 using upstream
-version `v15.5.2`, commit `a0f82f14`.
+The last update to Iosevka Comfy was done on 2022-07-21 using upstream
+version `v15.6.0`, commit `254f75f7`.
 
 Each file is provided as-is in the hope that it may prove useful, but
 is otherwise intended only for my private use.

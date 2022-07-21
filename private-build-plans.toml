@@ -37,10 +37,7 @@ cv22 = 1    # W straight
 cv23 = 1    # X cap straight
 cv24 = 1    # Y cap straight
 cv25 = 1    # Z cap straight
-cv26 = 10   # a single storey earless tailed bottom
-cv27 = 1    # b toothed
 cv28 = 1    # c serifless
-cv29 = 1    # d toothed
 cv33 = 1    # h straight
 cv34 = 10   # i serified flat tailed
 cv35 = 6    # j flat hook serified
@@ -48,7 +45,6 @@ cv37 = 10   # l serified flat tailed
 cv42 = 9    # r compact
 cv43 = 1    # s serifless
 cv44 = 2    # t flat hook
-cv45 = 4    # u tailed
 cv49 = 6    # y cursive flat terminal hook
 cv53 = 1    # Λ, Δ lambda and delta cap straight
 cv54 = 2    # α alpha straight tailed
@@ -84,6 +80,9 @@ VXDD = 2    # ijäöü square diacretics
 
 # Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
 [buildPlans.iosevka-comfy.variants.upright]
+cv26 = 3    # a double storey rounded
+cv27 = 2    # b rounded
+cv29 = 2    # d rounded
 cv30 = 1    # e straight
 cv31 = 16   # f serifless bottom flat top crossbar at x height
 cv32 = 9    # g single storey flat hook earless cornered top
@@ -92,6 +91,7 @@ cv38 = 6    # m earless double arch short middle leg
 cv39 = 3    # n earless straight
 cv40 = 2    # p earless
 cv41 = 2    # q earless
+cv45 = 2    # u rounded
 cv46 = 1    # v straight
 cv47 = 1    # w straight
 cv48 = 1    # x straight
@@ -105,6 +105,9 @@ cv89 = 2    # & et open top (ampersand)
 
 # Optional; Configure single character's variant for Italic only; Overrides [design]
 [buildPlans.iosevka-comfy.variants.italic]
+cv26 = 1    # a double storey straight
+cv27 = 1    # b straight
+cv29 = 1    # d straight
 cv30 = 2    # e curly
 cv31 = 14   # f extended flat top bottom hook
 cv32 = 7    # g single storey flat hook
@@ -113,6 +116,7 @@ cv38 = 2    # m straight middle shortleg
 cv39 = 1    # n straight
 cv40 = 1    # p straight
 cv41 = 1    # q straight
+cv45 = 1    # u straight
 cv46 = 2    # v curly
 cv47 = 2    # w curly short middle top
 cv48 = 2    # x curly
