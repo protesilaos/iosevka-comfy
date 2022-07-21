@@ -111,7 +111,7 @@ And the same idea with the point size at 17 (Emacs `:height` 170):
 
 ![iosevka-comfy-vertical-spacing](./iosevka-comfy-large-vertical-spacing.png)
 
-![iosevka-vertical-spacing](./iosevka-vertical-large-spacing.png)
+![iosevka-vertical-spacing](./iosevka-large-vertical-spacing.png)
 
 ## Variants
 
