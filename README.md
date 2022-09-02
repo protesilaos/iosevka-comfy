@@ -148,13 +148,15 @@ stylistic overrides, as documented above.
 ## Comparison to base Iosevka
 
 This is a regular Emacs session with the default font set to point size
-17 (a `:height` face attribute of 100).  In the first picture we have
-upstream Iosevka and in the second is Iosevka Comfy (specifically the
-`iosevka-comfy` variant).  Notice how Iosevka Comfy is more vertically
-compact (fits more lines), while you can also discern the stylic
-differences between the two typefaces.
+17 (a `:height` face attribute of 170).  Notice how Iosevka Comfy is
+more vertically compact (fits more lines), while you can also discern
+the stylic differences between the two typefaces.
+
+### iosevka
 
 ![iosevka-vertical-spacing](./screenshots/iosevka-vertical-spacing.png)
+
+### iosevka-comfy
 
 ![iosevka-comfy-vertical-spacing](./screenshots/iosevka-comfy-vertical-spacing.png)
 
