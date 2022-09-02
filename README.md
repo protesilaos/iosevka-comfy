@@ -215,8 +215,8 @@ It seems that queueing the builds, such as with a `for` loop, does not
 work as intended: the variants are not differentiated from the base
 `iosevka-comfy` build.
 
-The last update to Iosevka Comfy was done on 2022-07-21 using upstream
-version `v15.6.0`, commit `254f75f7`.
+The last update to Iosevka Comfy was done on 2022-09-02 using upstream
+version `v16.0.2`, commit `2f48331f`.
 
 Each file is provided as-is in the hope that it may prove useful, but
 is otherwise intended only for my private use.

@@ -229,7 +229,6 @@ leading = 1100
 
 # Iosevka Comfy variants
 # ======================
-# Same glyph overrides and metrics, except for the spacing.
 
 
 # Fixed spacing (no ligatures)
@@ -504,4 +503,164 @@ menu  = 7
 css   = "normal"
 
 [buildPlans.iosevka-comfy-wide-fixed.metric-override]
+leading = 1100
+
+
+# More curly shapes
+# -----------------
+
+[buildPlans.iosevka-comfy-motion]
+family = "Iosevka Comfy Motion"
+spacing = "normal"
+serifs = "sans"
+
+# It seems we can inherit variants, but not weights, slopes, widths,
+# metric-override...
+[buildPlans.iosevka-comfy-motion.variants]
+inherits = "buildPlans.iosevka-comfy"
+
+[buildPlans.iosevka-comfy-motion.variants.design]
+cv01 = 2    # A cap curly
+cv11 = 2    # K cap curly serifless
+cv16 = 1    # Q cap curly bottom tail
+cv17 = 2    # R cap curly
+cv21 = 2    # V cap curly
+cv22 = 2    # W cap curly
+cv23 = 2    # X cap curly serifless
+cv25 = 4    # Z cap curly serifless
+cv26 = 2    # a double storey tailed
+cv27 = 5    # b rounded top serif
+cv29 = 7    # d rounded top serif
+cv31 = 18   # f tailed bottom flat top crossbar at x height
+cv32 = 8    # g single storey flat hook serified top
+cv33 = 2    # h tailed
+cv34 = 8    # i serified tailed
+cv37 = 8    # l serified tailed
+cv38 = 8    # m double arch earless tailed with short middle leg
+cv39 = 4    # n earless tailed
+cv45 = 4    # u tailed
+cv49 = 12   # y cursive flat terminal hook serified
+cv99 = 1    # .:; round punctuation marks
+VXDD = 1    # ijäöü round diacretics
+
+[buildPlans.iosevka-comfy-motion.variants.upright]
+cv36 = 2    # k serifless curly
+cv46 = 2    # v curly
+cv47 = 2    # w curly
+cv48 = 2    # x curly serifless
+cv50 = 4    # z curly serifless
+
+[buildPlans.iosevka-comfy-motion.variants.italic]
+cv36 = 3    # k serifless cursive
+cv44 = 1    # t curly
+cv46 = 6    # v cursive serified
+cv47 = 14   # w cursive serified
+cv48 = 7    # x cursive
+cv50 = 25   # z cursive serifless
+
+[buildPlans.iosevka-comfy-motion.weights.light]
+shape = 300
+menu  = 300
+css   = 300
+
+[buildPlans.iosevka-comfy-motion.weights.semilight]
+shape = 350
+menu  = 350
+css   = 350
+
+[buildPlans.iosevka-comfy-motion.weights.regular]
+shape = 400
+menu  = 400
+css   = 400
+
+[buildPlans.iosevka-comfy-motion.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+
+[buildPlans.iosevka-comfy-motion.weights.extrabold]
+shape = 800
+menu  = 800
+css   = 800
+
+[buildPlans.iosevka-comfy-motion.slopes.upright]
+angle = 0
+shape = "upright"
+menu  = "upright"
+css   = "normal"
+
+[buildPlans.iosevka-comfy-motion.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu  = "italic"
+css   = "italic"
+
+[buildPlans.iosevka-comfy-motion.widths.normal]
+shape = 525
+menu  = 5
+css   = "normal"
+
+[buildPlans.iosevka-comfy-motion.metric-override]
+leading = 1100
+
+
+# Iosevka Comfy Motion with Duo spacing (quasi-proportional)
+# -----------------------------------------------------------
+[buildPlans.iosevka-comfy-motion-duo]
+family = "Iosevka Comfy Motion Duo"
+spacing = "quasi-proportional"
+serifs = "sans"
+
+# It seems we can inherit variants, but not weights, slopes, widths,
+# metric-override...
+[buildPlans.iosevka-comfy-motion-duo.variants]
+inherits = "buildPlans.iosevka-comfy-motion"
+
+[buildPlans.iosevka-comfy-motion-duo.variants.design]
+cv38 = 11    # m double arch earless tailed
+cv71 = 9     # 0 oval forward slash
+
+[buildPlans.iosevka-comfy-motion-duo.weights.light]
+shape = 300
+menu  = 300
+css   = 300
+
+[buildPlans.iosevka-comfy-motion-duo.weights.semilight]
+shape = 350
+menu  = 350
+css   = 350
+
+[buildPlans.iosevka-comfy-motion-duo.weights.regular]
+shape = 400
+menu  = 400
+css   = 400
+
+[buildPlans.iosevka-comfy-motion-duo.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+
+[buildPlans.iosevka-comfy-motion-duo.weights.extrabold]
+shape = 800
+menu  = 800
+css   = 800
+
+[buildPlans.iosevka-comfy-motion-duo.slopes.upright]
+angle = 0
+shape = "upright"
+menu  = "upright"
+css   = "normal"
+
+[buildPlans.iosevka-comfy-motion-duo.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu  = "italic"
+css   = "italic"
+
+[buildPlans.iosevka-comfy-motion-duo.widths.normal]
+shape = 525
+menu  = 5
+css   = "normal"
+
+[buildPlans.iosevka-comfy-motion-duo.metric-override]
 leading = 1100
