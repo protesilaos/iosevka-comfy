@@ -1,14 +1,14 @@
 # Iosevka Comfy
-
-[ For screenshots, check the "Variants" section below, as well as
-  "Comparison to base Iosevka". ]
+#### Iosevka (Can Only Modify a Font, Yes)
 
 Highly customised build of the [Iosevka
 typeface](https://github.com/be5invis/Iosevka), with a rounded style and
 open shapes, adjusted metrics, and overrides for almost all individual
 glyphs in both roman (upright) and italic (slanted) variants.
 
-## Details of the typeface
+IMAGES HERE: <https://protesilaos.com/emacs/iosevka-comfy-pictures>.
+
+## Details of the base typeface
 
 Iosevka Comfy is more vertically compact than the standard upstream
 configuration.  Glyphs are rounder and have tailed ends or serifs only
@@ -66,8 +66,6 @@ established patterns:
   default Iosevka at small point sizes).  It otherwise exhibits the same
   rounded/earless patterns.
 
-[ Also read the section "Deviations from the regular style". ]
-
 The target of small point sizes also informs the decision to use squared
 punctuation marks and a dotted `%` sign (the percent looks like `./.`
 instead of `o/o`).  They look more crisp.
@@ -96,23 +94,23 @@ read.
 
 ## Variants
 
-Iosevka Comfy comes in five variants, all of which share the same
-stylistic overrides, as documented above.
+Iosevka Comfy comes in seven variants:
 
 * `iosevka-comfy` is monospaced and supports ligatures.  Apart from
   ligatures, it allows certain glyphs, such as arrows, to occupy more
   than one block.
 
 * `iosevka-comfy-motion` is like `iosevka-comfy` but with lots of small
-  tweaks that add serifs and tailed ends to give a more playful
-  impression.
+  tweaks that add serifs and tailed ends to relevant glyphs.  Put sipmly
+  this is the pseudo-serif version of the otherwise sans-serif base
+  style.
 
 * `iosevka-comfy-duo` is quasi-proportional and supports ligatures.  The
-  naturally wide glyphs, such as `m`, are allowed to occupy two blocks
-  instead of one.
+  naturally wide glyphs, such as `i`, are allowed to occupy their
+  natural width instead of one space.
 
 * `iosevka-comfy-motion-duo` is like `iosevka-comfy-duo` but with the
-  more playful style of `iosevka-comfy-motion`.
+  serified style of `iosevka-comfy-motion`.
 
 * `iosevka-comfy-fixed` is like `iosevka-comfy` albeit strictly
   monospaced and thus does not support ligatures.  All glyphs are
@@ -126,65 +124,6 @@ stylistic overrides, as documented above.
 
 * `iosevka-comfy-wide-fixed` same as `iosevka-comfy-wide` though it is
   strictly monospaced and does not support ligatures.
-
-### Demo of the variants
-
-#### iosevka-comfy
-
-![iosevka-comfy](./screenshots/iosevka-comfy.png)
-
-#### iosevka-comfy-motion
-
-![iosevka-comfy-motion](./screenshots/iosevka-comfy-motion.png)
-
-#### iosevka-comfy-duo
-
-![iosevka-comfy-duo](./screenshots/iosevka-comfy-duo.png)
-
-#### iosevka-comfy-motion-duo
-
-![iosevka-comfy-motion-duo](./screenshots/iosevka-comfy-motion-duo.png)
-
-## Comparison to base Iosevka
-
-This is a regular Emacs session with the default font set to point size
-17 (a `:height` face attribute of 170).  Notice how Iosevka Comfy is
-more vertically compact (fits more lines), while you can also discern
-the stylic differences between the two typefaces.
-
-### iosevka
-
-![iosevka-vertical-spacing](./screenshots/iosevka-vertical-spacing.png)
-
-### iosevka-comfy
-
-![iosevka-comfy-vertical-spacing](./screenshots/iosevka-comfy-vertical-spacing.png)
-
-## Deviations from the regular style
-
-The variants of Iosevka Comfy are subdivided into "narrow" and "wide".
-The former consists of `iosevka-comfy` and `iosevka-comfy-fixed`.  The
-latter includes `iosevka-comfy-wide`, `iosevka-comfy-wide-fixed`, and
-the quasi-proportional `iosevka-comfy-duo`, `iosevka-comfy-motion-duo`.
-
-Due to the relaxed spacing requirements and concomitant legibility
-considerations, the wide variants have stylistic deviations from their
-counterparts.  In detail:
-
-* The `m` character has three legs of equal length, insetad of a shorter
-  middle leg.  The short middle leg in the narrow variants is necessary
-  for legibility, especially at small point sizes (otherwise the
-  character's legs visually blend into what appears to be a solid
-  block).
-
-* The `0` has a forward slash that cuts diagonally through the middle of
-  the circle, connecting the bottom left part to the top right of the
-  oval shape.  Whereas the narrow variants have a dashed forward slash
-  which does not connect the two sides as it is positioned inside the
-  oval shape.
-
-[ These are without prejudice to the remaining aesthetics of
-  `iosevka-comfy-motion`, `iosevka-comfy-motion-duo`. ]
 
 ## Install on GNU/Linux
 
@@ -215,8 +154,8 @@ It seems that queueing the builds, such as with a `for` loop, does not
 work as intended: the variants are not differentiated from the base
 `iosevka-comfy` build.
 
-The last update to Iosevka Comfy was done on 2022-09-02 using upstream
-version `v16.0.2`, commit `2f48331f`.
+The last update to Iosevka Comfy was done on 2022-09-10 using upstream
+version `v16.2.0`, commit `b7a59ee4`.
 
 Each file is provided as-is in the hope that it may prove useful, but
 is otherwise intended only for my private use.

@@ -221,7 +221,7 @@ css   = "normal"   # "font-stretch' property of webfont CSS.
 # Edit the values to change the metrics. Remove this section when overriding is not needed.
 
 [buildPlans.iosevka-comfy.metric-override]
-leading = 1100
+leading = 1150
 
 # End metric override section
 ###################################################################################################
@@ -286,7 +286,7 @@ menu  = 5
 css   = "normal"
 
 [buildPlans.iosevka-comfy-fixed.metric-override]
-leading = 1100
+leading = 1150
 
 
 
@@ -364,7 +364,7 @@ menu  = 5
 css   = "normal"
 
 [buildPlans.iosevka-comfy-duo.metric-override]
-leading = 1100
+leading = 1150
 
 
 
@@ -443,7 +443,7 @@ menu  = 7
 css   = "normal"
 
 [buildPlans.iosevka-comfy-wide.metric-override]
-leading = 1100
+leading = 1150
 
 
 
@@ -503,11 +503,11 @@ menu  = 7
 css   = "normal"
 
 [buildPlans.iosevka-comfy-wide-fixed.metric-override]
-leading = 1100
+leading = 1150
 
 
-# More curly shapes
-# -----------------
+# More curly and/or serified shapes
+# ---------------------------------
 
 [buildPlans.iosevka-comfy-motion]
 family = "Iosevka Comfy Motion"
@@ -521,42 +521,51 @@ inherits = "buildPlans.iosevka-comfy"
 
 [buildPlans.iosevka-comfy-motion.variants.design]
 cv01 = 2    # A cap curly
+cv02 = 4    # B cap assymetric with top serif
+cv03 = 4    # C cap top inward serif
+cv04 = 3    # D cap squared with top serif
+cv05 = 2    # E cap top-left serif
+cv06 = 2    # F cap top-left serif
+cv07 = 22   # G cap toothed inward top serif
+cv08 = 2    # H cap top-left serif
 cv11 = 2    # K cap curly serifless
+cv12 = 2    # L cap bottom right serif
+cv13 = 7    # M cap short middle leg slanted sides top serif
+cv14 = 3    # N cap standard shape top serif
+cv15 = 3    # P cap closed top serif
 cv16 = 1    # Q cap curly bottom tail
-cv17 = 2    # R cap curly
-cv21 = 2    # V cap curly
-cv22 = 2    # W cap curly
-cv23 = 2    # X cap curly serifless
-cv25 = 4    # Z cap curly serifless
+cv17 = 7    # R cap curly top serif
+cv18 = 4    # S cap top inward serif
+cv21 = 4    # V cap curly top serif
+cv22 = 8    # W cap curly top serif
+cv23 = 4    # X cap curly top serif
+cv24 = 6    # Y cap curly top serif
+cv25 = 22   # Z cap curly top serif
 cv26 = 2    # a double storey tailed
-cv27 = 5    # b rounded top serif
-cv29 = 7    # d rounded top serif
+cv27 = 4    # b toothed top serif
+cv28 = 4    # c top inward serif
+cv29 = 9    # d tailed top serif
 cv31 = 18   # f tailed bottom flat top crossbar at x height
 cv32 = 8    # g single storey flat hook serified top
-cv33 = 2    # h tailed
+cv33 = 4    # h tailed top serif
 cv34 = 8    # i serified tailed
+cv36 = 8    # k curly top serif
 cv37 = 8    # l serified tailed
-cv38 = 8    # m double arch earless tailed with short middle leg
-cv39 = 4    # n earless tailed
+cv38 = 20   # m top serif tailed with short middle leg
+cv39 = 8    # n top serif tailed
+cv40 = 4    # p top serif
+cv41 = 8    # q top serif tailed
+cv42 = 15   # r top serif hooked
+cv43 = 4    # s top inward serif
 cv45 = 4    # u tailed
+cv46 = 5    # v curly top serif
+cv47 = 9    # w curly top serif
+cv48 = 3    # x curly top serif
 cv49 = 12   # y cursive flat terminal hook serified
-cv99 = 1    # .:; round punctuation marks
-VXDD = 1    # ijäöü round diacretics
-
-[buildPlans.iosevka-comfy-motion.variants.upright]
-cv36 = 2    # k serifless curly
-cv46 = 2    # v curly
-cv47 = 2    # w curly
-cv48 = 2    # x curly serifless
-cv50 = 4    # z curly serifless
+cv50 = 22   # z curly top serif
 
 [buildPlans.iosevka-comfy-motion.variants.italic]
-cv36 = 3    # k serifless cursive
 cv44 = 1    # t curly
-cv46 = 6    # v cursive serified
-cv47 = 14   # w cursive serified
-cv48 = 7    # x cursive
-cv50 = 25   # z cursive serifless
 
 [buildPlans.iosevka-comfy-motion.weights.light]
 shape = 300
@@ -601,7 +610,7 @@ menu  = 5
 css   = "normal"
 
 [buildPlans.iosevka-comfy-motion.metric-override]
-leading = 1100
+leading = 1150
 
 
 # Iosevka Comfy Motion with Duo spacing (quasi-proportional)
@@ -617,8 +626,7 @@ serifs = "sans"
 inherits = "buildPlans.iosevka-comfy-motion"
 
 [buildPlans.iosevka-comfy-motion-duo.variants.design]
-cv38 = 11    # m double arch earless tailed
-cv71 = 9     # 0 oval forward slash
+cv71 = 9    # 0 oval forward slash
 
 [buildPlans.iosevka-comfy-motion-duo.weights.light]
 shape = 300
@@ -663,4 +671,4 @@ menu  = 5
 css   = "normal"
 
 [buildPlans.iosevka-comfy-motion-duo.metric-override]
-leading = 1100
+leading = 1150
