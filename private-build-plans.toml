@@ -446,7 +446,6 @@ inherits = "buildPlans.iosevka-comfy"
 cv01 = 3    # A cap top serif
 cv02 = 4    # B cap assymetric with top serif
 cv03 = 4    # C cap top inward serif
-cv04 = 3    # D cap squared with top serif
 cv05 = 2    # E cap top-left serif
 cv06 = 2    # F cap top-left serif
 cv07 = 22   # G cap toothed inward top serif
