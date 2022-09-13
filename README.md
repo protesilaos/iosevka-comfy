@@ -150,9 +150,11 @@ variant:
 npm run build -- ttf::iosevka-comfy
 ```
 
-It seems that queueing the builds, such as with a `for` loop, does not
-work as intended: the variants are not differentiated from the base
-`iosevka-comfy` build.
+Or this loop:
+
+```sh
+for i in iosevka-comfy iosevka-comfy-wide iosevka-comfy-fixed iosevka-comfy-wide-fixed iosevka-comfy-motion iosevka-comfy-duo iosevka-comfy-motion-duo ; do npm run build -- ttf::$i ; done
+```
 
 The last update to Iosevka Comfy was done on 2022-09-10 using upstream
 version `v16.2.0`, commit `b7a59ee4`.

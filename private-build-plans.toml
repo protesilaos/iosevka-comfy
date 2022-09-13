@@ -1,16 +1,11 @@
-[buildPlans.iosevka-comfy]       # <iosevka-comfy> is your plan name
-family = "Iosevka Comfy"         # Font menu family name
-spacing = "normal"               # Optional; Values: `normal`, `quasi-proportional`, `quasi-proportional-extension-only`, `term`, `fontconfig-mono`, or `fixed`
-serifs = "sans"                  # Optional; Values: `sans` or `slab`
+# Iosevka Comfy main style
+# ------------------------
+[buildPlans.iosevka-comfy]  # <iosevka-comfy> is your plan name
+family = "Iosevka Comfy"    # Font menu family name
+spacing = "normal"          # Optional; Values: `normal`, `quasi-proportional`, `quasi-proportional-extension-only`, `term`, `fontconfig-mono`, or `fixed`
+serifs = "sans"             # Optional; Values: `sans` or `slab`
+export-glyph-names = false  # Set this to true for ligature support in Kitty (increased file size)
 
-###################################################################################################
-# Configure variants
-
-# # Optional; Whether to inherit a `ss##` variant
-# [buildPlans.iosevka-comfy.variants]
-# inherits = "ss01"
-
-# Optional; Configure single character's variant
 [buildPlans.iosevka-comfy.variants.design]
 cv01 = 1    # A cap straight
 cv02 = 1    # B cap straight
@@ -78,7 +73,6 @@ cv98 = 1    # ? smooth
 cv99 = 2    # .:; square punctuation marks
 VXDD = 2    # ijäöü square diacretics
 
-# Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
 [buildPlans.iosevka-comfy.variants.upright]
 cv26 = 3    # a double storey rounded
 cv27 = 2    # b rounded
@@ -103,7 +97,6 @@ cv77 = 3    # 6 straight
 cv80 = 3    # 9 straight
 cv89 = 2    # & et open top (ampersand)
 
-# Optional; Configure single character's variant for Italic only; Overrides [design]
 [buildPlans.iosevka-comfy.variants.italic]
 cv26 = 1    # a double storey straight
 cv27 = 1    # b straight
@@ -128,17 +121,6 @@ cv77 = 1    # 6 closed contour
 cv80 = 1    # 9 closed contour
 cv89 = 4    # & et open top toothed (ampersand)
 
-# End variant section
-###################################################################################################
-
-###################################################################################################
-# Override default building weights
-# When buildPlans.<plan name>.weights is absent, all weights would built and mapped to
-# default values.
-# IMPORTANT : Currently "menu" and "css" property only support numbers between 0 and 1000.
-#             and "shape" properly only supports number between 100 and 900 (inclusive).
-#             If you decide to use custom weights you have to define all the weights you
-#             plan to use otherwise they will not be built.
 [buildPlans.iosevka-comfy.weights.light]
 shape = 300
 menu  = 300
@@ -164,18 +146,11 @@ shape = 800
 menu  = 800
 css   = 800
 
-# End weight section
-###################################################################################################
-
-###################################################################################################
-# Override default building slope sets
-# When this section is absent, all slopes would be built.
-
 [buildPlans.iosevka-comfy.slopes.upright]
-angle = 0             # Angle in degrees. Valid range [0, 15]
-shape = "upright"     # Slope grade used for shape selection.  `upright` | `oblique` | `italic`
-menu  = "upright"     # Slope grade used for naming.           `upright` | `oblique` | `italic`
-css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `oblique` | `italic`
+angle = 0
+shape = "upright"
+menu  = "upright"
+css   = "normal"
 
 [buildPlans.iosevka-comfy.slopes.italic]
 angle = 9.4
@@ -183,52 +158,10 @@ shape = "italic"
 menu  = "italic"
 css   = "italic"
 
-# End slope section
-###################################################################################################
-
-###################################################################################################
-# Override default building widths
-# When buildPlans.<plan name>.widths is absent, all widths would built and mapped to
-# default values.
-# IMPORTANT : Currently "shape" property only supports numbers between 434 and 664 (inclusive),
-#             while "menu" only supports integers between 1 and 9 (inclusive).
-#             The "shape" parameter specifies the unit width, measured in 1/1000 em. The glyphs'
-#             width are equal to, or a simple multiple of the unit width.
-#             If you decide to use custom widths you have to define all the widths you plan to use,
-#             otherwise they will not be built.
-
-# [buildPlans.iosevka-comfy.widths.condensed]
-# shape = 485
-# menu  = 3
-# css   = "condensed"
-
 [buildPlans.iosevka-comfy.widths.normal]
-shape = 525        # Unit Width, measured in 1/1000 em.
-menu  = 5          # Width grade for the font's names.
-css   = "normal"   # "font-stretch' property of webfont CSS.
-
-# [buildPlans.iosevka-comfy.widths.expanded]
-# shape = 600
-# menu  = 7
-# css   = "expanded"
-
-# End width section
-###################################################################################################
-
-###################################################################################################
-# Metric overrides
-# Certain metrics like line height (leading) could be overridden in your build plan file.
-# Edit the values to change the metrics. Remove this section when overriding is not needed.
-
-[buildPlans.iosevka-comfy.metric-override]
-leading = 1150
-
-# End metric override section
-###################################################################################################
-
-
-# Iosevka Comfy variants
-# ======================
+shape = 525
+menu  = 5
+css   = "normal"
 
 
 # Fixed spacing (no ligatures)
@@ -237,6 +170,7 @@ leading = 1150
 family = "Iosevka Comfy Fixed"
 spacing = "fixed"
 serifs = "sans"
+export-glyph-names = false
 
 # It seems we can inherit variants, but not weights, slopes, widths,
 # metric-override...
@@ -285,10 +219,6 @@ shape = 525
 menu  = 5
 css   = "normal"
 
-[buildPlans.iosevka-comfy-fixed.metric-override]
-leading = 1150
-
-
 
 # Duo spacing (quasi-proportional)
 # --------------------------------
@@ -296,6 +226,7 @@ leading = 1150
 family = "Iosevka Comfy Duo"
 spacing = "quasi-proportional"
 serifs = "sans"
+export-glyph-names = false
 
 # It seems we can inherit variants, but not weights, slopes, widths,
 # metric-override...
@@ -363,10 +294,6 @@ shape = 525
 menu  = 5
 css   = "normal"
 
-[buildPlans.iosevka-comfy-duo.metric-override]
-leading = 1150
-
-
 
 # Like iosevka-comfy but expanded
 # -------------------------------
@@ -374,6 +301,7 @@ leading = 1150
 family = "Iosevka Comfy Wide"
 spacing = "normal"
 serifs = "sans"
+export-glyph-names = false
 
 # It seems we can inherit variants, but not weights, slopes, widths,
 # metric-override...
@@ -442,10 +370,6 @@ shape = 625
 menu  = 7
 css   = "normal"
 
-[buildPlans.iosevka-comfy-wide.metric-override]
-leading = 1150
-
-
 
 # Like iosevka-comfy-wide but fixed monospace (no ligatures)
 # ----------------------------------------------------------
@@ -453,6 +377,7 @@ leading = 1150
 family = "Iosevka Comfy Wide Fixed"
 spacing = "fixed"
 serifs = "sans"
+export-glyph-names = false
 
 # It seems we can inherit variants, but not weights, slopes, widths,
 # metric-override...
@@ -502,9 +427,6 @@ shape = 625
 menu  = 7
 css   = "normal"
 
-[buildPlans.iosevka-comfy-wide-fixed.metric-override]
-leading = 1150
-
 
 # More curly and/or serified shapes
 # ---------------------------------
@@ -512,7 +434,8 @@ leading = 1150
 [buildPlans.iosevka-comfy-motion]
 family = "Iosevka Comfy Motion"
 spacing = "normal"
-serifs = "sans"
+serifs = "slab"
+export-glyph-names = false
 
 # It seems we can inherit variants, but not weights, slopes, widths,
 # metric-override...
@@ -554,7 +477,7 @@ cv37 = 8    # l serified tailed
 cv38 = 20   # m top serif tailed with short middle leg
 cv39 = 8    # n top serif tailed
 cv40 = 4    # p top serif
-cv41 = 8    # q top serif tailed
+cv41 = 4    # q top serif
 cv42 = 15   # r top serif hooked
 cv43 = 4    # s top inward serif
 cv45 = 4    # u tailed
@@ -609,16 +532,14 @@ shape = 525
 menu  = 5
 css   = "normal"
 
-[buildPlans.iosevka-comfy-motion.metric-override]
-leading = 1150
-
 
 # Iosevka Comfy Motion with Duo spacing (quasi-proportional)
 # -----------------------------------------------------------
 [buildPlans.iosevka-comfy-motion-duo]
 family = "Iosevka Comfy Motion Duo"
 spacing = "quasi-proportional"
-serifs = "sans"
+serifs = "slab"
+export-glyph-names = false
 
 # It seems we can inherit variants, but not weights, slopes, widths,
 # metric-override...
@@ -669,6 +590,3 @@ css   = "italic"
 shape = 525
 menu  = 5
 css   = "normal"
-
-[buildPlans.iosevka-comfy-motion-duo.metric-override]
-leading = 1150
