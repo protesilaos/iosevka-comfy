@@ -550,6 +550,7 @@ export-glyph-names = false
 inherits = "buildPlans.iosevka-comfy-motion"
 
 [buildPlans.iosevka-comfy-motion-duo.variants.design]
+cv38 = 19   # m top serif tailed with normal middle leg
 cv71 = 9    # 0 oval forward slash
 
 [buildPlans.iosevka-comfy-motion-duo.weights.light]
