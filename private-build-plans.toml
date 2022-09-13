@@ -469,7 +469,6 @@ cv26 = 2    # a double storey tailed
 cv27 = 4    # b toothed top serif
 cv28 = 4    # c top inward serif
 cv29 = 9    # d tailed top serif
-cv31 = 18   # f tailed bottom flat top crossbar at x height
 cv32 = 8    # g single storey flat hook serified top
 cv33 = 4    # h tailed top serif
 cv34 = 8    # i serified tailed
@@ -488,7 +487,11 @@ cv48 = 3    # x top serif
 cv49 = 12   # y cursive flat terminal hook serified
 cv50 = 19   # z top serif
 
+[buildPlans.iosevka-comfy-motion.variants.upright]
+cv31 = 6    # f serifless bottom flat curved crossbar at x height
+
 [buildPlans.iosevka-comfy-motion.variants.italic]
+cv31 = 9    # f extended bottom flat curved crossbar at x height
 cv44 = 1    # t curly
 
 [buildPlans.iosevka-comfy-motion.weights.light]
