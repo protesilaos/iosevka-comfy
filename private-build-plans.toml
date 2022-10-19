@@ -240,6 +240,8 @@ inherits = "buildPlans.iosevka-comfy"
 # oval shape.
 [buildPlans.iosevka-comfy-duo.variants.design]
 cv71 = 9    # 0 oval forward slash
+cv90 = 2    # @ traditional four-fold style
+cv93 = 2    # % with two circles
 
 # The 'm' character has three legs of equal length, insetad of a shorter
 # middle leg.  The short middle leg in the narrow variants is necessary
@@ -475,6 +477,8 @@ inherits = "buildPlans.iosevka-comfy-motion"
 [buildPlans.iosevka-comfy-motion-duo.variants.design]
 cv38 = 19   # m top serif tailed with normal middle leg
 cv71 = 9    # 0 oval forward slash
+cv90 = 2    # @ traditional four-fold style
+cv93 = 2    # % with two circles
 
 [buildPlans.iosevka-comfy-motion-duo.weights.light]
 shape = 300
@@ -539,6 +543,8 @@ inherits = "buildPlans.iosevka-comfy"
 # oval shape.
 [buildPlans.iosevka-comfy-wide.variants.design]
 cv71 = 9    # 0 oval forward slash
+cv90 = 2    # @ traditional four-fold style
+cv93 = 2    # % with two circles
 
 # The 'm' character has three legs of equal length, insetad of a shorter
 # middle leg.  The short middle leg in the narrow variants is necessary

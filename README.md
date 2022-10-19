@@ -129,8 +129,8 @@ Or this loop:
 for i in iosevka-comfy{,-motion,-wide}{,-fixed,-duo} ; do npm run build -- ttf::$i ; done
 ```
 
-The last update to Iosevka Comfy was done on 2022-09-14 using upstream
-version `v16.2.0`, commit `b7a59ee4`.
+The last update to Iosevka Comfy was done on 2022-10-19 using upstream
+version `v16.3.4`, commit `ad1e247a`.
 
 Each file is provided as-is in the hope that it may prove useful, but
 is otherwise intended only for my private use.
