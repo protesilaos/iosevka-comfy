@@ -113,11 +113,12 @@ git clone --depth 1 https://git.sr.ht/~protesilaos/iosevka-comfy
 
 ## Build information
 
-Iosevka Comfy is configured in accordance with the documentation of the
-upstream project.  This practically means that we define our
-`private-build-plans.toml`, install the `npm` dependencies, and then
-build the `.ttf` files with something like the following for each
-variant:
+Iosevka Comfy is configured in accordance with the documentation of
+the upstream project.  This practically means that (i) [we clone the
+official repo](https://github.com/be5invis/iosevka), (ii) define our
+`private-build-plans.toml` at its root, (iii) install the `npm`
+dependencies, and (iv) build the `.ttf` files with something like the
+following for each variant (run from the root of the project):
 
 ```sh
 npm run build -- ttf::iosevka-comfy
