@@ -13,7 +13,7 @@ roman (upright) and italic (slanted) variants.
     + GitLab: <https://gitlab.com/protesilaos/iosevka-comfy>
 + Mailing list: <https://lists.sr.ht/~protesilaos/general-issues>
 + Sample pictures: <https://protesilaos.com/emacs/iosevka-comfy-pictures>
-+ Backronym: Iosevka (Could Only Modify a Font, Yes)
++ Backronym: Iosevka ... Could Only Modify a Font, Yes
 
 ## Principles of the design
 
