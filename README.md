@@ -45,11 +45,18 @@ strives to eliminate.
 
 ## Variants
 
-Iosevka Comfy comes in three sets of three.  These triplets follow the
-naming scheme `NAME{,-fixed,-duo}`.  The base name is monospaced and
-supports ligatures.  The "fixed" one is strictly monospaced so as to
-work with all terminal emulators: it does not support ligatures.  And
-the "duo" is quasi-proportionately spaced, while supporting ligatures.
+Iosevka Comfy comes in four sets of three: two sans-serif and two
+serif supersets.  The triplets in each set follow the naming scheme
+`NAME{,-fixed,-duo}`.  The base name is monospaced and supports
+ligatures.  The "fixed" one is strictly monospaced so as to work with
+all terminal emulators: it does not support ligatures or any wider
+glyphs.  And the "duo" is quasi-proportionately spaced, while
+supporting ligatures.
+
+Here "quasi-proportional" means that certain glyphs are allowed to
+occupy their natural width, instead of being strictly monospaced,
+while other remain monospaced.  This combination results in a style
+that feels like fixed spacing but reads like variable spacing.
 
 1. The **compact, sans-serif** set:
 
@@ -92,6 +99,19 @@ the "duo" is quasi-proportionately spaced, while supporting ligatures.
    - `iosevka-comfy-wide-duo` is the "wide" counterpart of the
      `iosevka-comfy-duo` family.
 
+4. The **wide, serif** set:
+
+   - `iosevka-comfy-wide-motion` is the same as `iosevka-comfy-motion`
+     except it is noticeably wider.  It also looks taller than
+     `iosevka-comfy-motion` even though both variants fit the same
+     number of lines on a screen.
+
+   - `iosevka-comfy-wide-motion-fixed` is the "wide" counterpart of the
+     `iosevka-comfy-motion-fixed` family.
+
+   - `iosevka-comfy-wide-motion-duo` is the "wide" counterpart of the
+     `iosevka-comfy-motion-duo` family.
+
 ## Install on GNU/Linux
 
 Unless you have some exotic system, in which case you know what you are
@@ -127,10 +147,10 @@ npm run build -- ttf::iosevka-comfy
 Or this loop:
 
 ```sh
-for i in iosevka-comfy{,-motion,-wide}{,-fixed,-duo} ; do npm run build -- ttf::$i ; done
+for i in iosevka-comfy{,-motion,-wide,-wide-motion}{,-fixed,-duo} ; do npm run build -- ttf::$i ; done
 ```
 
-The last update to Iosevka Comfy was done on 2023-03-24 using upstream
+The last update to Iosevka Comfy was done on 2023-04-27 using upstream
 version `v21.1.1`, commit `d3b46143`.
 
 Each file is provided as-is in the hope that it may prove useful, but
