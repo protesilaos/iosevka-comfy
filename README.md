@@ -132,6 +132,21 @@ that feels like fixed spacing but reads like variable spacing.
    - `iosevka-comfy-wide-motion-duo` is the "wide" counterpart of the
      `iosevka-comfy-motion-duo` family.
 
+All fonts have upright and slanted variants and are available in the
+following weights:
+
+```
+| Name      | Code |
+|-----------+------|
+| light     |  300 |
+| semilight |  350 |
+| regular   |  400 |
+| medium    |  500 |
+| semibold  |  600 |
+| bold      |  700 |
+| extrabold |  800 |
+```
+
 ## Install on GNU/Linux
 
 Unless you have some exotic system, in which case you know what you are
@@ -170,8 +185,8 @@ Or this loop:
 for i in iosevka-comfy{,-motion,-wide,-wide-motion}{,-fixed,-duo} ; do npm run build -- ttf::$i ; done
 ```
 
-The last update to Iosevka Comfy was done on 2023-05-15 using upstream
-version `v21.1.2`, commit `7ef24b8d`.
+The last update to Iosevka Comfy was done on 2023-09-30 using upstream
+commit `f6e57fbf0` (post `v27.0.2`).
 
 Each file is provided as-is in the hope that it may prove useful, but
 is otherwise intended only for my private use.
