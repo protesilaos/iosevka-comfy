@@ -7,13 +7,11 @@ typeface](https://github.com/be5invis/Iosevka), with a consistent
 rounded style and overrides for almost all individual glyphs in both
 roman (upright) and italic (slanted) variants.
 
-+ Git repo on SourceHut: <https://git.sr.ht/~protesilaos/iosevka-comfy>
-  - Mirrors:
-    + GitHub: <https://github.com/protesilaos/iosevka-comfy>
-    + GitLab: <https://gitlab.com/protesilaos/iosevka-comfy>
-+ Mailing list: <https://lists.sr.ht/~protesilaos/general-issues>
++ Git repositories:
+  + GitHub: <https://github.com/protesilaos/iosevka-comfy>
+  + GitLab: <https://gitlab.com/protesilaos/iosevka-comfy>
 + Sample pictures: <https://protesilaos.com/emacs/iosevka-comfy-pictures>
-+ Backronym: Iosevka ... Could Only Modify a Font, Yes
++ Backronym: Iosevka ... Could Only Modify a Font, Yes.
 
 ## Principles of the design
 
@@ -163,7 +161,7 @@ When in doubt, install locally.
 **Perform a shallow clone** of this repository to speed things up:
 
 ```sh
-git clone --depth 1 https://git.sr.ht/~protesilaos/iosevka-comfy
+git clone --depth 1 https://github.com/protesilaos/iosevka-comfy
 ```
 
 ## Build information
