@@ -10,110 +10,136 @@ serifs = "sans"             # Optional; Values: `sans` or `slab`
 export-glyph-names = false  # Set this to true for ligature support in Kitty (increased file size)
 
 [buildPlans.iosevka-comfy.variants.design]
-cv01 = 1    # A cap straight
-cv02 = 1    # B cap symmetric
-cv03 = 1    # C cap serifless
-cv04 = 6    # D cap curly with top and bottom serif (without serifs TODO reads like TOOO at small point sizes)
-cv05 = 1    # E cap serifless
-cv06 = 1    # F cap serifless
-cv07 = 2    # G cap toothed serifless
-cv08 = 1    # H cap serifless
-cv09 = 1    # I cap long serifs
-cv10 = 2    # J cap serified asymmetric
-cv11 = 6    # K cap curly 
-cv12 = 1    # L cap serifless
-cv13 = 4    # M cap short middle leg slanted sides
-cv14 = 1    # N cap symmetric
-cv15 = 1    # P cap straight
-cv16 = 4    # Q cap crossing tail
-cv17 = 1    # R cap straight
-cv18 = 1    # S cap serifless
-cv19 = 1    # T cap serifless
-cv20 = 11   # U cap rounded serifless
-cv21 = 1    # V cap straight
-cv22 = 1    # W cap straight
-cv23 = 1    # X cap straight
-cv24 = 1    # Y cap straight
-cv25 = 1    # Z cap straight
-cv28 = 1    # c serifless
-cv33 = 1    # h straight
-cv34 = 10   # i serified flat tailed
-cv35 = 6    # j flat hook serified
-cv37 = 10   # l serified flat tailed
-cv42 = 9    # r hookless, serifless
-cv43 = 1    # s serifless
-cv44 = 2    # t flat hook
-cv46 = 1    # v straight
-cv47 = 1    # w straight short middle top
-cv48 = 1    # x straight
-cv49 = 16   # y cursive flat hook serifless
-cv50 = 1    # z straight
-cv51 = 22   # ſ flat hook tailed
-cv52 = 38   # ß flat hook tailed, serifless
-cv83 = 26   # 0 oval dashed forward slash
-cv86 = 2    # 3 arched
-cv88 = 2    # 5 open contour
-cv90 = 1    # 7 straight
-cv91 = 3    # 8 two asymmetric circles
-cv93 = 2    # ijäöü square diacretics
-cv94 = 2    # .:; square punctuation marks
-cv95 = 2    # ~ tilde low
-cv96 = 3    # * asterisk five-pointed low
-cv97 = 2    # _ underscore right below baseline
-cv98 = 2    # ^ uptick medium
-cv99 = 1    # ( parentheses normal slope
-VSAA = 2    # { braces curly
-VSAB = 1    # « guillemet straight
-VSAC = 1    # # column straight
-VSAD = 2    # & et open top (ampersand)
-VSAE = 2    # @ three-fold, tall height
-VSAF = 2    # $ dollar strike through
-VSAG = 1    # % percent dots
-VSAH = 2    # | bar force upright
-VSAI = 1    # ' single quote straight
-VSAJ = 1    # ` grave/backtick straight
-VSAK = 1    # ? smooth
-VSAM = 2    # ¢ cent strike through
-VLAA = 2    # ≥ equal-or-{higher,lower} slanted
-VLAB = 2    # ≠ not equal slight slant
+cv03 = 3    # 3 with double arc
+cv05 = 5    # 5 with arched middle part and no serifs
+cv07 = 1    # 7 with straight stem and no serifs
+cv08 = 3    # 8 with asymmetric crossing middle part
+cv10 = 26   # 0 with oval shape and mid slash separated from the outline
+cv11 = 1    # A cap straight with no serifs
+cv12 = 1    # B cap symmetric with no serifs
+cv13 = 1    # C cap serifless
+cv14 = 6    # D cap curly with top and bottom serif (without serifs TODO reads like TOOO at small point sizes)
+cv15 = 1    # E cap serifless
+cv16 = 1    # F cap serifless
+cv17 = 2    # G cap with toothed body, inward hook terminal, and no top serif
+cv18 = 1    # H cap serifless
+cv19 = 2    # I cap with long serifs
+cv20 = 2    # J cap with top serif and curly hook
+cv21 = 6    # K cap curly with no serifs
+cv22 = 1    # L cap serifless
+cv23 = 7    # M cap with short middle leg and slanted sides
+cv24 = 1    # N cap symmetric with no serifs
+cv25 = 1    # P cap straight with no serifs
+cv26 = 4    # Q cap with tail crossing the ring
+cv27 = 1    # R cap straight with no serifs
+cv28 = 1    # S cap serifless
+cv29 = 1    # T cap serifless
+cv30 = 12   # U cap rounded bottom with no serifs
+cv31 = 1    # V cap straight with no serifs
+cv32 = 1    # W cap straight with short middle part and no serifs
+cv33 = 1    # X cap straight with no serifs
+cv34 = 1    # Y cap straight with no serifs
+cv35 = 1    # Z cap straight with no serifs
+cv38 = 1    # c serifless
+cv43 = 1    # h straight with no serifs
+cv44 = 10   # i with top serif, curly base, and flat tail
+cv45 = 6    # j with top serif, curly base, and flat tail
+cv47 = 14   # l with top serif, curly base, and flat tail
+cv52 = 9    # r hookless body shape with no serifs
+cv53 = 1    # s serifless
+cv54 = 7    # t with crossbar, curly base, and flat tail
+cv56 = 1    # v straight with no serifs
+cv57 = 1    # w straight with short middle top
+cv58 = 1    # x straight with no serifs
+cv59 = 16   # y open "u" top with no serifs and flat tail
+cv60 = 1    # z straight with no serifs
+cv61 = 4    # ß (eszet) cap with flat top and serifs
+cv62 = 25   # ſ (long S) with curly top and bottom bases and flat tails
+cv63 = 38   # ß (eszet) with ligature of long S (cv62) and s, containing terminal tail
+cv67 = 12   # α (greek alpha) rounded with curly tail
+VXAC = 2    # β (greek beta) with no bottom hook
+cv68 = 1    # Γ (greek gamma cap) straight with no serifs
+VXAD = 3    # γ (greek gamma) with asymmetric curly shape
+cv69 = 1    # Δ (greek delta cap) straight with no serifs
+cv70 = 1    # δ (greek delta) with rounded top
+cv71 = 12   # ι (greek iota) with top serif, curly base, and flat tail
+cv72 = 1    # Λ (greek iota) with top serif, curly base, and flat tail
+cv73 = 1    # λ (greek lambda) straight with no serifs
+cv74 = 1    # μ (greek me) with toothed body and no serifs
+VXAE = 1    # ν (greek ne) straight with no serifs
+cv75 = 2    # ξ (greek xe) with flat top
+cv76 = 1    # π (greek pe) straight with top serifs
+cv77 = 6    # τ (greek taf) with top serifs, curly base, and flat tail
+VXAF = 1    # υ (greek ypsilon) straight with no serifs
+VXAG = 2    # φ (greek phe) with open side and no stem
+cv78 = 1    # χ (greek he) straight with no serifs
+VXAH = 3    # ψ (greek pse) straight with no serifs and no stem
+VDAA = 2    # square dots over i and j
+VDAB = 2    # square dots in diacretics like ä
+VDAC = 2    # square dots in punctuation marks
+VDAD = 2    # square dots in braille
+VSAA = 2    # ~ lower placement
+VSAB = 3    # * with five points and low placement
+VSAC = 2    # _ right below the baseline
+VSAD = 2    # ^ at medium placement
+VSAE = 1    # ` as a short, straight, diagonal line
+VSAF = 1    # ' as a short, straight, vertical line
+VSAG = 1    # ( with a normal contour
+VSAH = 2    # { curly
+VSAI = 1    # « straight
+VSAJ = 1    # # column straight
+VSAK = 2    # & et open top
+VSAL = 2    # @ three-fold, tall height
+VSAM = 2    # $ strike through
+VSAN = 2    # ¢ strike through
+VSAO = 1    # % percent dots
+VSAP = 2    # | bar force upright
+VSAQ = 1    # ? smooth
+VLAA = 2    # ≥ slanted bottom lines
+VLAB = 2    # ≠ slightly slanted bar
+VLAC = 1    # equality ligation with notch in the middle
+VLAD = 1    # hyphen minus ligation with notch in the middle
+VLAE = 1    # plus plus ligation with notch in the middle
+VLAF = 1    # bars in double arrow ligation with notch in the middle
+VLAG = 1    # bar in single arrow ligation with notch in the middle
 
 [buildPlans.iosevka-comfy.variants.upright]
-cv26 = 3    # a double storey toothless
-cv27 = 4    # b rounded
-cv29 = 4    # d rounded
-cv30 = 1    # e straight
-cv31 = 4    # f serifless bottom flat top with crossbar at x height
-cv32 = 9    # g single storey flat hook earless cornered top
-cv36 = 6    # k curly
-cv38 = 20   # m earless double arch short middle leg
-cv39 = 8    # n earless straight
-cv40 = 4    # p earless
-cv41 = 8    # q earless
-cv45 = 8    # u toothless
-cv84 = 3    # 1 serified with base
-cv85 = 1    # 2 straight
-cv87 = 3    # 4 semi-open contour
-cv89 = 3    # 6 straight
-cv92 = 3    # 9 straight
+cv36 = 4    # a double storey with a toothless corner
+cv37 = 4    # b rounded
+cv39 = 7    # d rounded
+cv40 = 1    # e straight
+cv41 = 12   # f with serifless bottom at baseline, flat top, and crossbar at the x height
+cv42 = 9    # g single storey with flat hook and earless cornered top
+cv46 = 6    # k curly with no serifs
+cv48 = 20   # m earless double arch short middle leg
+cv49 = 8    # n earless straight
+cv50 = 4    # p earless with cornered top
+cv51 = 9    # q earless with cornered top
+cv55 = 8    # u with toothless shape and cornered bottom with no serifs
+cv01 = 3    # 1 with bottom serif and short top serif
+cv02 = 1    # 2 with straight neck and no serifs
+cv04 = 5    # 4 with semi-open contour and no serifs
+cv06 = 3    # 6 with straight bar
+cv09 = 3    # 9 with straight bar
 
 [buildPlans.iosevka-comfy.variants.italic]
-cv26 = 1    # a double storey straight
-cv27 = 1    # b straight
-cv29 = 1    # d straight
-cv30 = 2    # e curly
-cv31 = 12   # f serifless extended bottom with flat top and crossbar at x height
-cv32 = 7    # g single storey flat hook
-cv36 = 1    # k straight
-cv38 = 8    # m straight short middle leg
-cv39 = 1    # n straight
-cv40 = 1    # p straight
-cv41 = 1    # q straight
-cv45 = 1    # u straight
-cv84 = 2    # 1 serified no base
-cv85 = 2    # 2 curly
-cv87 = 1    # 4 closed contour crossing
-cv89 = 1    # 6 closed contour
-cv92 = 1    # 9 closed contour
+cv36 = 1    # a double storey straight
+cv37 = 1    # b straight with no serifs
+cv39 = 1    # d straight with no serifs
+cv40 = 2    # e curly
+cv41 = 16   # f with serifless extended bottom, flat top, and crossbar at the x height
+cv42 = 7    # g single storey flat hook
+cv46 = 1    # k straight with no serifs
+cv48 = 8    # m straight short middle leg
+cv49 = 1    # n straight with no serifs
+cv50 = 1    # p straight with no serifs
+cv51 = 1    # q straight with no serifs
+cv55 = 1    # u straight with no serifs
+cv01 = 2    # 1 with top hook and no bottom serif
+cv02 = 3    # 2 with curly neck and no serifs
+cv04 = 1    # 4 with closed contour and crossing bar
+cv06 = 1    # 6 with closed contour
+cv09 = 1    # 9 with closed contour
 
 [buildPlans.iosevka-comfy.weights.light]
 shape = 300
@@ -167,7 +193,6 @@ shape = 525
 menu  = 5
 css   = "normal"
 
-
 # Fixed spacing (no ligatures)
 # ----------------------------
 [buildPlans.iosevka-comfy-fixed]
@@ -176,10 +201,11 @@ spacing = "fixed"
 serifs = "sans"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-fixed.variants]
 inherits = "buildPlans.iosevka-comfy"
+
+[buildPlans.iosevka-comfy-fixed.variants.design]
+cv19 = 2    # I cap with long serifs
 
 [buildPlans.iosevka-comfy-fixed.weights.light]
 shape = 300
@@ -242,8 +268,6 @@ spacing = "quasi-proportional"
 serifs = "sans"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-duo.variants]
 inherits = "buildPlans.iosevka-comfy"
 
@@ -253,9 +277,10 @@ inherits = "buildPlans.iosevka-comfy"
 # which does not connect the two sides as it is positioned inside the
 # oval shape.
 [buildPlans.iosevka-comfy-duo.variants.design]
-cv83 = 20   # 0 oval forward slash
-VSAE = 5    # @ traditional four-fold style
-VSAG = 2    # % with two circles
+cv10 = 20   # 0 oval forward slash
+cv19 = 3    # I cap with short serifs
+VSAL = 5    # @ traditional four-fold style
+VSAO = 3    # % with two circles and continuous diagonal line
 
 # The 'm' character has three legs of equal length, insetad of a shorter
 # middle leg.  The short middle leg in the narrow variants is necessary
@@ -263,10 +288,10 @@ VSAG = 2    # % with two circles
 # character's legs visually blend into what appears to be a solid
 # block).
 [buildPlans.iosevka-comfy-duo.variants.upright]
-cv38 = 15   # m earless normal middle leg
+cv48 = 15   # m earless normal middle leg
 
 [buildPlans.iosevka-comfy-duo.variants.italic]
-cv38 = 1    # m straight normal middle leg
+cv48 = 1    # m straight normal middle leg
 
 [buildPlans.iosevka-comfy-duo.weights.light]
 shape = 300
@@ -320,7 +345,6 @@ shape = 525
 menu  = 5
 css   = "normal"
 
-
 ### Compact + Serif
 ### ===============
 
@@ -333,54 +357,53 @@ spacing = "normal"
 serifs = "slab"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-motion.variants]
 inherits = "buildPlans.iosevka-comfy"
 
 [buildPlans.iosevka-comfy-motion.variants.design]
-cv01 = 2    # A cap straight top serif
-cv02 = 2    # B cap symmetric with top serif
-cv03 = 4    # C cap top inward serif
-cv05 = 2    # E cap top-left serif
-cv06 = 2    # F cap top-left serif
-cv08 = 2    # H cap top-left serif
-cv12 = 2    # L cap bottom right serif
-cv13 = 4    # M cap slanted sides top serif short middle joint 
-cv14 = 2    # N cap symmetric top serif
-cv15 = 2    # P cap closed top serif
-cv17 = 2    # R cap straight top serif
-cv18 = 4    # S cap top inward serif
-cv20 = 4    # U cap toothless top serif
-cv21 = 2    # V cap straight top serif
-cv22 = 2    # W cap straight top serif short middle joint
-cv23 = 2    # X cap straight top serif
-cv24 = 3    # Y cap straight top serif
-cv25 = 10   # Z cap straight top serif
-cv26 = 2    # a double storey tailed
-cv27 = 2    # b toothed top serif
-cv28 = 4    # c top inward serif
-cv29 = 2    # d toothed top serif
-cv32 = 8    # g single storey flat hook serified top
-cv33 = 3    # h tailed top serif
-cv34 = 8    # i serified tailed
-cv36 = 7    # k curly top serif
-cv37 = 8    # l serified tailed
-cv38 = 13   # m top serif tailed with short middle leg
-cv39 = 6    # n top serif tailed
-cv40 = 2    # p top serif
-cv41 = 2    # q top serif
-cv42 = 10   # r top serif hookless
-cv43 = 4    # s top inward serif
-cv45 = 2    # u top serif tailed
-cv46 = 2    # v top serif
-cv47 = 2    # w top serif
-cv48 = 2    # x top serif
-cv49 = 17   # y cursive flat terminal hook serified top left
-cv50 = 10   # z top serif
+cv11 = 2    # A cap straight top serif
+cv12 = 2    # B cap symmetric with top serif
+cv13 = 4    # C cap top inward serif
+cv15 = 2    # E cap top left serif
+cv16 = 2    # F cap top left serif
+cv18 = 2    # H cap top left serif
+cv19 = 2    # I cap with long serifs
+cv22 = 2    # L cap bottom right serif
+cv23 = 8    # M cap with slanted sides, top left serif, and short middle joint
+cv24 = 2    # N cap symmetric with top left serif
+cv25 = 2    # P cap closed with top left serif
+cv27 = 2    # R cap straight with top left serif
+cv28 = 4    # S cap with top inward serif
+cv30 = 13   # U cap with rounded bottom and top left serif
+cv31 = 2    # V cap straight with top serif
+cv32 = 2    # W cap straight, top left serif, and short middle joint
+cv33 = 2    # X cap straight with top left serif
+cv34 = 3    # Y cap straight with top left serif
+cv35 = 4    # Z cap straight with top left serif
+cv36 = 3    # a double storey with curly tail
+cv37 = 2    # b toothed shape with top left serif
+cv38 = 4    # c with top inward serif
+cv39 = 2    # d toothed shape with top left serif
+cv42 = 8    # g single storey with flat hook and serified top corner
+cv43 = 3    # h tailed top serif
+cv44 = 14   # i with top serif and slight curly tail
+cv46 = 7    # k curly with top left serif
+cv47 = 14   # l with top serif and curly tail
+cv48 = 13   # m with top left serif, tailed bottom right corner, and short middle leg
+cv49 = 6    # n with top left serif and tailed bottom right corner
+cv50 = 2    # p straight with top left serif
+cv51 = 3    # q straight with top right serif
+cv52 = 10   # r with top left serif and hookless bottom
+cv53 = 4    # s with top inward serif
+cv55 = 6    # u with top left serif and bottom right tail
+cv56 = 2    # v straight with top left serif
+cv57 = 2    # w straight with top left serif and short middle section
+cv58 = 2    # x straight with top left serif
+cv59 = 17   # y with open top, flat terminal hook, and top left serif
+cv60 = 4    # z straight with top left serif
 
 [buildPlans.iosevka-comfy-motion.variants.italic]
-cv44 = 1    # t curly
+cv54 = 1    # t with crossbar and upwardly bent hook
 
 [buildPlans.iosevka-comfy-motion.weights.light]
 shape = 300
@@ -434,7 +457,6 @@ shape = 525
 menu  = 5
 css   = "normal"
 
-
 # "Motion" variant with fixed spacing (no ligatures)
 # --------------------------------------------------
 [buildPlans.iosevka-comfy-motion-fixed]
@@ -443,10 +465,11 @@ spacing = "fixed"
 serifs = "slab"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-motion-fixed.variants]
 inherits = "buildPlans.iosevka-comfy-motion"
+
+[buildPlans.iosevka-comfy-motion-fixed.variants.design]
+cv19 = 2    # I cap with long serifs
 
 [buildPlans.iosevka-comfy-motion-fixed.weights.light]
 shape = 300
@@ -509,16 +532,15 @@ spacing = "quasi-proportional"
 serifs = "slab"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-motion-duo.variants]
 inherits = "buildPlans.iosevka-comfy-motion"
 
 [buildPlans.iosevka-comfy-motion-duo.variants.design]
-cv38 = 2    # m top serif tailed with normal middle leg
-cv83 = 20   # 0 oval forward slash
-VSAE = 5    # @ traditional four-fold style
-VSAG = 3    # % with two circles
+cv10 = 20   # 0 oval forward slash
+cv19 = 3    # I cap with short serifs
+cv48 = 2    # m with top left serif and normal middle leg
+VSAL = 5    # @ traditional four-fold style
+VSAO = 3    # % with two circles and continuous diagonal line
 
 [buildPlans.iosevka-comfy-motion-duo.weights.light]
 shape = 300
@@ -584,8 +606,6 @@ spacing = "normal"
 serifs = "sans"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-wide.variants]
 inherits = "buildPlans.iosevka-comfy"
 
@@ -595,9 +615,10 @@ inherits = "buildPlans.iosevka-comfy"
 # which does not connect the two sides as it is positioned inside the
 # oval shape.
 [buildPlans.iosevka-comfy-wide.variants.design]
-cv83 = 20   # 0 oval forward slash
-VSAE = 5    # @ traditional four-fold style
-VSAG = 2    # % with two circles
+cv10 = 20   # 0 oval forward slash
+cv19 = 3    # I cap with short serifs
+VSAL = 5    # @ traditional four-fold style
+VSAO = 3    # % with two circles and continuous diagonal line
 
 # The 'm' character has three legs of equal length, insetad of a shorter
 # middle leg.  The short middle leg in the narrow variants is necessary
@@ -605,10 +626,10 @@ VSAG = 2    # % with two circles
 # character's legs visually blend into what appears to be a solid
 # block).
 [buildPlans.iosevka-comfy-wide.variants.upright]
-cv38 = 15   # m earless normal middle leg
+cv48 = 15   # m earless with normal middle leg
 
 [buildPlans.iosevka-comfy-wide.variants.italic]
-cv38 = 1    # m straight normal middle leg
+cv48 = 1    # m straight top left with normal middle leg
 
 [buildPlans.iosevka-comfy-wide.weights.light]
 shape = 300
@@ -671,10 +692,11 @@ spacing = "fixed"
 serifs = "sans"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-wide-fixed.variants]
 inherits = "buildPlans.iosevka-comfy-wide"
+
+[buildPlans.iosevka-comfy-wide-fixed.variants.design]
+cv19 = 3    # I cap with short serifs
 
 [buildPlans.iosevka-comfy-wide-fixed.weights.light]
 shape = 300
@@ -737,8 +759,6 @@ spacing = "quasi-proportional"
 serifs = "sans"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-wide-duo.variants]
 inherits = "buildPlans.iosevka-comfy-wide"
 
@@ -806,8 +826,6 @@ spacing = "normal"
 serifs = "slab"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-wide-motion.variants]
 inherits = "buildPlans.iosevka-comfy-motion"
 
@@ -823,10 +841,11 @@ inherits = "buildPlans.iosevka-comfy-motion"
 # character's legs visually blend into what appears to be a solid
 # block).
 [buildPlans.iosevka-comfy-wide-motion.variants.design]
-cv38 = 2    # m top serif tailed with normal middle leg
-cv83 = 20   # 0 oval forward slash
-VSAE = 5    # @ traditional four-fold style
-VSAG = 3    # % with two circles
+cv10 = 20   # 0 oval forward slash
+cv19 = 3    # I cap with short serifs
+cv48 = 2    # m with top left serif and normal middle leg
+VSAL = 5    # @ traditional four-fold style
+VSAO = 3    # % with two circles and continuous diagonal line
 
 [buildPlans.iosevka-comfy-wide-motion.weights.light]
 shape = 300
@@ -889,10 +908,11 @@ spacing = "fixed"
 serifs = "slab"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-wide-motion-fixed.variants]
 inherits = "buildPlans.iosevka-comfy-wide-motion"
+
+[buildPlans.iosevka-comfy-wide-motion-fixed.variants.design]
+cv19 = 3    # I cap with short serifs
 
 [buildPlans.iosevka-comfy-wide-motion-fixed.weights.light]
 shape = 300
@@ -955,8 +975,6 @@ spacing = "quasi-proportional"
 serifs = "slab"
 export-glyph-names = false
 
-# It seems we can inherit variants, but not weights, slopes, widths,
-# metric-override...
 [buildPlans.iosevka-comfy-wide-motion-duo.variants]
 inherits = "buildPlans.iosevka-comfy-wide-motion"
 
