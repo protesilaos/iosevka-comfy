@@ -2,10 +2,10 @@
 
 IMAGES HERE: <https://protesilaos.com/emacs/iosevka-comfy-pictures>.
 
-Customised build of the [Iosevka
-typeface](https://github.com/be5invis/Iosevka), with a consistent
-rounded style and overrides for almost all individual glyphs in both
-roman (upright) and italic (slanted) variants.
+Customised build of the [Iosevka typeface](https://github.com/be5invis/Iosevka),
+with a consistent rounded style and overrides for almost all
+individual glyphs in both roman (upright) and italic (slanted)
+variants.
 
 + Git repositories:
   + GitHub: <https://github.com/protesilaos/iosevka-comfy>
@@ -47,20 +47,20 @@ strives to eliminate.
 | Family                          | Shapes | Spacing | Style      | Ligatures |
 |---------------------------------+--------+---------+------------+-----------|
 | Iosevka Comfy                   | Sans   | Compact | Monospaced | Yes       |
-| Iosevka Comfy Fixed             | Sans   | Compact | Monospaced | No        |
 | Iosevka Comfy Duo               | Sans   | Compact | Duospaced  | Yes       |
+| Iosevka Comfy Fixed             | Sans   | Compact | Monospaced | No        |
 |---------------------------------+--------+---------+------------+-----------|
 | Iosevka Comfy Motion            | Slab   | Compact | Monospaced | Yes       |
-| Iosevka Comfy Motion Fixed      | Slab   | Compact | Monospaced | No        |
 | Iosevka Comfy Motion Duo        | Slab   | Compact | Duospaced  | Yes       |
+| Iosevka Comfy Motion Fixed      | Slab   | Compact | Monospaced | No        |
 |---------------------------------+--------+---------+------------+-----------|
 | Iosevka Comfy Wide              | Sans   | Wide    | Monospaced | Yes       |
-| Iosevka Comfy Wide Fixed        | Sans   | Wide    | Monospaced | No        |
 | Iosevka Comfy Wide Duo          | Sans   | Wide    | Duospaced  | Yes       |
+| Iosevka Comfy Wide Fixed        | Sans   | Wide    | Monospaced | No        |
 |---------------------------------+--------+---------+------------+-----------|
 | Iosevka Comfy Wide Motion       | Slab   | Wide    | Monospaced | Yes       |
-| Iosevka Comfy Wide Motion Fixed | Slab   | Wide    | Monospaced | No        |
 | Iosevka Comfy Wide Motion Duo   | Slab   | Wide    | Duospaced  | Yes       |
+| Iosevka Comfy Wide Motion Fixed | Slab   | Wide    | Monospaced | No        |
 ```
 
 Iosevka Comfy comes in four sets of three: two sans-serif and two
@@ -183,8 +183,8 @@ Or this loop:
 for i in iosevka-comfy{,-motion,-wide,-wide-motion}{,-fixed,-duo} ; do npm run build -- ttf::$i ; done
 ```
 
-The last update to Iosevka Comfy was done on 2024-08-22 using upstream
-commit `2528045` (post `v31.3.0`).
+The last update to Iosevka Comfy was done on 2024-10-19 using upstream
+commit `6850d2a` (post `v31.9.1`).
 
 Each file is provided as-is in the hope that it may prove useful, but
 is otherwise intended only for my private use.
