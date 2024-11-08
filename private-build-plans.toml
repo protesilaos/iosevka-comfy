@@ -75,7 +75,7 @@ VXAG = 2    # φ (greek phe) with open side and no stem
 cv78 = 1    # χ (greek he) straight with no serifs
 VXAH = 3    # ψ (greek pse) straight with no serifs and no stem
 VDAA = 2    # square dots over i and j
-VDAB = 2    # square dots in diacretics like ä
+VDAB = 2    # square dots in diacritics like ä
 VDAC = 2    # square dots in punctuation marks
 VDAD = 2    # square dots in braille
 VSAA = 2    # ~ lower placement
@@ -108,7 +108,7 @@ cv36 = 4    # a double storey with a toothless corner
 cv37 = 4    # b rounded
 cv39 = 7    # d rounded
 cv40 = 1    # e straight
-cv41 = 12   # f with serifless bottom at baseline, flat top, and crossbar at the x height
+cv41 = 12   # f with serifless bottom at baseline, flat top, and crossbar at the x-height
 cv42 = 9    # g single storey with flat hook and earless cornered top
 cv46 = 6    # k curly with no serifs
 cv48 = 20   # m earless double arch short middle leg
@@ -127,7 +127,7 @@ cv36 = 1    # a double storey straight
 cv37 = 1    # b straight with no serifs
 cv39 = 1    # d straight with no serifs
 cv40 = 2    # e curly
-cv41 = 16   # f with serifless extended bottom, flat top, and crossbar at the x height
+cv41 = 16   # f with serifless extended bottom, flat top, and crossbar at the x-height
 cv42 = 7    # g single storey flat hook
 cv46 = 1    # k straight with no serifs
 cv48 = 8    # m straight short middle leg
@@ -282,7 +282,7 @@ cv19 = 3    # I cap with short serifs
 VSAL = 5    # @ traditional four-fold style
 VSAO = 3    # % with two circles and continuous diagonal line
 
-# The 'm' character has three legs of equal length, insetad of a shorter
+# The 'm' character has three legs of equal length, instead of a shorter
 # middle leg.  The short middle leg in the narrow variants is necessary
 # for legibility, especially at small point sizes (otherwise the
 # character's legs visually blend into what appears to be a solid
@@ -620,7 +620,7 @@ cv19 = 3    # I cap with short serifs
 VSAL = 5    # @ traditional four-fold style
 VSAO = 3    # % with two circles and continuous diagonal line
 
-# The 'm' character has three legs of equal length, insetad of a shorter
+# The 'm' character has three legs of equal length, instead of a shorter
 # middle leg.  The short middle leg in the narrow variants is necessary
 # for legibility, especially at small point sizes (otherwise the
 # character's legs visually blend into what appears to be a solid
@@ -835,7 +835,7 @@ inherits = "buildPlans.iosevka-comfy-motion"
 # which does not connect the two sides as it is positioned inside the
 # oval shape.
 #
-# The 'm' character has three legs of equal length, insetad of a shorter
+# The 'm' character has three legs of equal length, instead of a shorter
 # middle leg.  The short middle leg in the narrow variants is necessary
 # for legibility, especially at small point sizes (otherwise the
 # character's legs visually blend into what appears to be a solid
