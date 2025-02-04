@@ -1,5 +1,11 @@
 # Iosevka Comfy
 
+[ As of 2025-02-04, the Iosevka Comfy project is discontinued. The
+  main reason is that "Iosevka" is a reserved name. See my Aporetic
+  fonts instead: <https://github.com/protesilaos/aporetic>. ]
+
+* * *
+
 IMAGES HERE: <https://protesilaos.com/emacs/iosevka-comfy-pictures>.
 
 Customised build of the [Iosevka typeface](https://github.com/be5invis/Iosevka),
